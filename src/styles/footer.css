@@ -1,7 +1,7 @@
 .footer {
     width: 100%;
     height: 200px;
-    background: #0a192f;
+    /* background: #1412185b; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,13 +10,22 @@
     margin-top: 200px;
 }
 
-.social-media svg {
-    color: white;
+.social-media {
+    display: flex;
+}
+
+.icon-container svg {
+    color: #59c9ff;
     margin: 20px;
-    font-size: 50px;
+    font-size: 60px;
     cursor: pointer;
 }
 
+.icon-container svg:hover {
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;
+}
+
 .footer p {
-    color: white;
+    color: #59c9ff;
 }
