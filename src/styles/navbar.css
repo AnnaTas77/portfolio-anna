@@ -45,10 +45,12 @@
     align-items: center;
     justify-content: center;
     font-weight: 600;
+    padding: 9px 12px 9px 12px;
+    border: 1px solid transparent;
+    border-radius: 5px;
 }
 
 .navbar-links a.active {
-    padding: 9px 12px 9px 12px;
     border-radius: 5px;
     border: 1px solid #59c9ff6b;
 
@@ -58,7 +60,6 @@
     /* transform: scale(1.1); */
     transition: all .2s ease-in-out;
     border: 1px solid #ffffff36;
-    padding: 9px 12px 9px 12px;
     border-radius: 5px;
 }
 
