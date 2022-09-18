@@ -21,7 +21,7 @@
 
 .logo-image img {
     width: 120px;
-    height: 120px;
+    height: 150px;
     padding: 0 10px 10px 10px;
 
 }
@@ -39,7 +39,7 @@
 .navbar-links a {
     color: #59c9ff;
     text-decoration: none;
-    margin: 20px;
+    margin: 50px;
     font-size: 25px;
     display: flex;
     align-items: center;
@@ -47,9 +47,19 @@
     font-weight: 600;
 }
 
+.navbar-links a.active {
+    padding: 9px 12px 9px 12px;
+    border-radius: 5px;
+    border: 1px solid #59c9ff6b;
+
+}
+
 .navbar-links a:hover {
-    transform: scale(1.1);
+    /* transform: scale(1.1); */
     transition: all .2s ease-in-out;
+    border: 1px solid #ffffff36;
+    padding: 9px 12px 9px 12px;
+    border-radius: 5px;
 }
 
 
