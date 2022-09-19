@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
-import { Link, useLocation } from 'react-router-dom'
+import { Link, NavLink, useLocation } from 'react-router-dom'
 import Logo from '../assets/At_neon2.png'
 import '../styles/navbar.css'
 
@@ -18,6 +18,7 @@ const NavBar = () => {
         setExpandNavbar((prev) => !prev);
     }
 
+
     return (
         <div className='navbar-container' id={expandNavbar ? 'open' : 'close'}>
             <Link to="/">
@@ -26,9 +27,9 @@ const NavBar = () => {
                 </div>
             </Link>
             <div className='navbar-links'>
-                <Link to="/" className='active'>Home</Link>
-                <Link to="/projects">Projects</Link>
-                <Link to="/contact">Contact</Link>
+                <NavLink to="/" end>Home</NavLink>
+                <NavLink to="/projects">Projects</NavLink>
+                <NavLink to="/contact">Contact</NavLink>
             </div>
             <div className="toggle-button">
                 <button onClick={handleClick}><FaBars /></button>

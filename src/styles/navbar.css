@@ -53,13 +53,13 @@
 .navbar-links a.active {
     border-radius: 5px;
     border: 1px solid #59c9ff6b;
+    font-weight: bold;
 
 }
 
 .navbar-links a:hover {
-    /* transform: scale(1.1); */
     transition: all .2s ease-in-out;
-    border: 1px solid #ffffff36;
+    border: 1px solid #59c9ff6b;
     border-radius: 5px;
 }
 
