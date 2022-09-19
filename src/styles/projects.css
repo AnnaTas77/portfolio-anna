@@ -10,7 +10,6 @@
 
 .projects .title {
     text-align: center;
-    color: #59c9ff;
     font-size: 5rem;
     font-weight: bolder;
 }
@@ -31,7 +30,7 @@
     text-align: center;
     border-width: 3px;
     border-style: solid;
-    border-image: linear-gradient(to bottom, #bf0453b8, rgba(0, 0, 0, 0)) 1 100%;
+    border-image: linear-gradient(to bottom, #fff, rgba(0, 0, 0, 0)) 1 100%;
 
 }
 
@@ -62,20 +61,18 @@
 
 
 .project-item h1 {
-    font-size: 2rem;
-    color: #59c9ff;
+    font-size: 2.5rem;
+    font-weight: 350;
 }
 
 .project-description {
-    color: #59c9ff;
     width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     text-align: left;
     padding: 20px;
-    font-weight: 500;
 }
 
 .project-socials {
@@ -90,7 +87,6 @@
 
 .reddit-live {
     font-size: 1.2rem;
-    color: #59c9ff;
     text-decoration: none;
 }
 
@@ -115,7 +111,6 @@
 
 .reddit-code {
     font-size: 1.2rem;
-    color: #59c9ff;
     text-decoration: none;
 }
 

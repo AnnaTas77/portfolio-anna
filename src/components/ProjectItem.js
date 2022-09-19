@@ -11,9 +11,7 @@ const ProjectItem = ({ image, name, description, live, github }) => {
                     <div className='live-link'>{live}</div>
                     <div className='github-code'>{github}</div>
                 </div>
-
             </div>
-
         </div>
     )
 }

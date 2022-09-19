@@ -7,36 +7,34 @@ import '../styles/navbar.css'
 const NavBar = () => {
 
     const [expandNavbar, setExpandNavbar] = useState(false);
+    const handleClick = () => setExpandNavbar(!expandNavbar);
 
-    const location = useLocation();
+    const [small, setSmall] = useState(false);
 
     useEffect(() => {
-        setExpandNavbar(false);
-    }, [location])
-
-    const handleClick = () => {
-        setExpandNavbar((prev) => !prev);
-    }
-
+        if (typeof window !== "undefined") {
+            window.addEventListener("scroll", () => {
+                setSmall(window.pageYOffset > 200)
+            });
+        }
+    }, []);
 
     return (
-        <div className='navbar-container' id={expandNavbar ? 'open' : 'close'}>
-            <Link to="/">
-                <div className='logo-image'>
-                    <img src={Logo} alt='Logo image' />
-                </div>
-            </Link>
+        <div className={`navbar-container ${small ? "navbar-small" : ""}`} id={expandNavbar ? 'open' : 'close'}>
+
+            <h1 className={`logo-initials ${small ? "logo-initials-small" : ""}`}>AT</h1>
+
             <div className='navbar-links'>
-                <NavLink to="/" end>Home</NavLink>
-                <NavLink to="/projects">Projects</NavLink>
-                <NavLink to="/contact">Contact</NavLink>
+                <p><a href='#home'>Home</a></p>
+                <p><a href='#projects'>Projects</a></p>
+                <p><a href='#contact'>Contact</a></p>
             </div>
+            {/* Hamburger */}
             <div className="toggle-button">
                 <button onClick={handleClick}><FaBars /></button>
-
             </div>
 
-        </div>
+        </div >
     )
 }
 
