@@ -10,7 +10,7 @@ import OnlineStoreCart from '../assets/Anna_Store_Best.jpg'
 const Projects = () => {
     return (
         <div className='projects' id="projects">
-            <h1 className='title'>My Personal Projects</h1>
+            <h1 className='title'>Personal Projects</h1>
             <div className='project-list'>
 
                 <ProjectItem
