@@ -7,6 +7,7 @@ import '../styles/navbar.css'
 const NavBar = () => {
 
     const [expandNavbar, setExpandNavbar] = useState(false);
+
     const handleClick = () => setExpandNavbar(!expandNavbar);
 
     const [small, setSmall] = useState(false);
@@ -25,10 +26,13 @@ const NavBar = () => {
             <h1 className={`logo-initials ${small ? "logo-initials-small" : ""}`}>AT</h1>
 
             <div className='navbar-links'>
-                <p><a href='#home'>Home</a></p>
-                <p><a href='#projects'>Projects</a></p>
-                <p><a href='#contact'>Contact</a></p>
+                <ul>
+                    <li><a href='#home'>Home</a></li>
+                    <li><a href='#projects'>Projects</a></li>
+                    <li><a href='#contact'>Contact</a></li>
+                </ul>
             </div>
+
             {/* Hamburger */}
             <div className="toggle-button">
                 <button onClick={handleClick}><FaBars /></button>

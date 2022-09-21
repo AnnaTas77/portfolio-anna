@@ -33,9 +33,16 @@
 
 
 
-/* Media Query for Smartphones */
 
-@media (max-width: 767px) {
+/* Small Devices */
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+    .about-me {
+        padding-top: 200px;
+        height: 400px;
+    }
+
     .about-me h2 {
         font-size: 1.7rem;
         padding: 0;
@@ -58,9 +65,48 @@
     }
 }
 
-/* Media Query for Tablets */
+/* iPads, Tablets*/
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+
+    .about-me {
+        padding-top: 200px;
+        height: 400px;
+    }
+
+
+    .about-me h2 {
+        font-size: 1.7rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    .wave {
+        display: flex;
+        font-size: 1.2rem;
+    }
+
+    .prompt {
+        font-size: 1.5rem;
+        width: 80%;
+        margin-top: 45px;
+    }
+
+    .projects .title {
+        font-size: 2rem;
+    }
+}
+
+
+
+/* Larger Devices */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .about-me {
+        padding-top: 200px;
+        height: 400px;
+    }
 
     .about-me h2 {
         margin-top: 200px;
@@ -83,4 +129,38 @@
     .prompt {
         margin-top: 45px;
     }
+
+}
+
+/* Large Devices */
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+
+    .about-me {
+        padding-top: 250px;
+        height: 400px;
+    }
+
+    .about-me h2 {
+        margin-top: 200px;
+        width: 85%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .wave {
+        display: flex;
+        font-size: 1.7rem;
+        font-size: 1.7rem;
+    }
+
+
+    .projects .title {
+        font-size: 2rem;
+    }
+
+    .prompt {
+        margin-top: 45px;
+    }
+
 }

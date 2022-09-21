@@ -93,12 +93,6 @@
     text-decoration: underline;
 }
 
-/* .reddit-live h3::before {
-    content: url('../assets/up-right-from-square-solid.svg');
-    margin-right: 4px;
-
-} */
-
 .reddit-live span,
 .reddit-code span,
 .fa-up-right-from-square {
@@ -148,7 +142,7 @@
     .project-item {
         flex-direction: column;
         width: 95%;
-        min-height: 550px;
+        min-height: 50%;
         justify-content: flex-start;
         align-items: center;
         text-align: center;
@@ -156,8 +150,9 @@
     }
 
     .project-image {
+        display: flex;
         width: 100%;
-        min-height: 280px;
+        min-height: 320px;
     }
 
     .project-item h1 {
@@ -169,6 +164,7 @@
 
     .project-card {
         width: 100%;
+        margin-top: -20px;
     }
 
     .project-description {
@@ -180,8 +176,7 @@
 
     .project-socials {
         padding: 10px;
-        margin: 0;
-
+        margin-bottom: 50px;
     }
 
     .reddit-live span,
@@ -214,7 +209,7 @@
     .project-item {
         flex-direction: column;
         width: 95%;
-        min-height: 550px;
+        height: 50%;
         justify-content: flex-start;
         align-items: center;
         text-align: center;
@@ -223,18 +218,21 @@
 
     .project-image {
         width: 100%;
-        min-height: 380px;
+        min-height: 480px;
+        height: 50%;
+
     }
 
     .project-item h1 {
         font-size: 2rem;
         width: 100%;
         padding: 0;
-        margin: 10px;
+        margin-top: 50px;
     }
 
     .project-card {
         width: 100%;
+        margin-top: -40px;
     }
 
     .project-description {
@@ -246,8 +244,7 @@
 
     .project-socials {
         padding: 10px;
-        margin: 0;
-
+        margin-bottom: 60px;
     }
 
     .reddit-live span,
@@ -274,7 +271,7 @@
     .project-item {
         flex-direction: column;
         width: 95%;
-        min-height: 550px;
+        height: 50%;
         justify-content: flex-start;
         align-items: center;
         text-align: center;
@@ -283,7 +280,8 @@
 
     .project-image {
         width: 100%;
-        min-height: 550px;
+        min-height: 680px;
+        height: 50%;
     }
 
     .project-item h1 {
@@ -295,6 +293,52 @@
 
     .project-card {
         width: 100%;
+        margin-top: -30px;
+        margin-bottom: 35px;
+    }
+
+    .project-description {
+        font-size: 1.2rem;
+        padding: 0;
+        text-align: center;
+        width: 80%;
+    }
+
+    .project-socials {
+        padding: 10px;
+        margin: 0;
+
+    }
+
+    .reddit-live span,
+    .reddit-code span,
+    .fa-up-right-from-square {
+        font-size: 1.2rem;
+    }
+}
+
+/* Large Devices */
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+
+    .projects .title {
+        font-size: 2.5rem;
+        width: 85%;
+    }
+
+    .project-list {
+        width: 90%;
+    }
+
+    .project-item {
+        width: 90%;
+        min-height: 450px;
+        height: 50%;
+    }
+
+    .project-image {
+        width: 75%;
+        min-height: 580px;
     }
 
     .project-description {
