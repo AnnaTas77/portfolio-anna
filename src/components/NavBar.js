@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
-import { Link, NavLink, useLocation } from 'react-router-dom'
 import Logo from '../assets/At_neon2.png'
 import '../styles/navbar.css'
 
@@ -34,8 +33,16 @@ const NavBar = () => {
             </div>
 
             {/* Hamburger */}
-            <div className="toggle-button">
-                <button onClick={handleClick}><FaBars /></button>
+            <div className="hamburger-button">
+                <button onClick={handleClick}>
+                    {!expandNavbar ? <FaBars /> : <FaTimes />}
+                </button>
+            </div>
+
+            <div className="mobile-menu" onClick={handleClick}>
+                <a href="#home">Home</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
             </div>
 
         </div >

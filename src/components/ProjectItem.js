@@ -3,7 +3,7 @@ import React from 'react'
 const ProjectItem = ({ image, name, description, live, github }) => {
     return (
         <div className='project-item'>
-            <div className='project-image' style={{ backgroundImage: `url(${image})` }} />
+            <div className='project-image' style={{ backgroundImage: `url(${image})` }}></div>
             <div className='project-card'>
                 <h1>{name}</h1>
                 <div className='project-description'>{description}</div>

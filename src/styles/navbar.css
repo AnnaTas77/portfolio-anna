@@ -4,11 +4,12 @@
     align-items: center;
     width: 100%;
     height: 140px;
-    background-color: #59c8ffb4;
+    background-color: #59c8ff;
     font-size: 1.5rem;
     z-index: 10;
     position: fixed;
-    transition: 0.4s;
+    transition: 0.25s;
+    box-shadow: 0 4px 12px 0px rgba(0, 0, 0, 0.32);
 }
 
 .navbar-small {
@@ -19,9 +20,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-left: 20px;
 }
-
 
 
 .logo-initials {
@@ -35,6 +34,7 @@ h1 {
         8px 8px #ff1f8f,
         20px 20px #000000;
     transition: 0.4s;
+    margin-left: 30px;
 }
 
 .logo-initials-small {
@@ -45,8 +45,6 @@ h1 {
 .navbar-links {
     display: flex;
     width: 100%;
-    margin-right: 30px;
-
 }
 
 .navbar-links ul {
@@ -71,13 +69,6 @@ h1 {
 
 }
 
-/* .navbar-links a.active {
-    border-radius: 5px;
-    border: 1px solid #59c9ff6b;
-    font-weight: bold;
-
-} */
-
 .navbar-links a:hover {
     transition: all .5s ease-in-out;
     border-radius: 5px;
@@ -86,9 +77,8 @@ h1 {
 }
 
 
-.toggle-button {
+.hamburger-button {
     display: none;
-
     position: absolute;
     right: 1rem;
     flex-direction: column;
@@ -98,7 +88,7 @@ h1 {
 }
 
 
-.toggle-button button {
+.hamburger-button button {
     margin-right: 20px;
     background-color: transparent;
     border: none;
@@ -107,18 +97,25 @@ h1 {
     color: white;
 }
 
+.mobile-menu {
+    display: none;
+}
+
 #open {
     height: 100vh;
-    z-index: 10;
+    background-color: #1d7baa;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 
 
 #open .navbar-links {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin-top: 100px;
-    position: absolute;
+    justify-content: center;
+    position: relative;
     top: 0;
     left: 0;
     height: 100vh;
@@ -138,10 +135,15 @@ h1 {
 @media only screen and (max-width: 480px) {
 
     .navbar-container {
-        flex-direction: column;
+        height: 100px;
     }
 
-    .toggle-button {
+    #open .navbar-links {
+        display: none;
+    }
+
+
+    .hamburger-button {
         display: flex;
         width: 100%;
         height: 100px;
@@ -150,23 +152,62 @@ h1 {
         color: white;
     }
 
-    /* .navbar-links {
-        display: none;
-    } */
+    .hamburger-button button {
+        position: absolute;
+        top: 30px;
+        right: 0;
+        margin-right: 7px;
+    }
+
+    .mobile-menu {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+        font-weight: 500;
+        margin-top: 50px;
+        position: absolute;
+        top: 80px;
+    }
+
+    .mobile-menu a {
+        text-decoration: none;
+        padding: 10px;
+        font-weight: 600;
+    }
+
+    .mobile-menu a:hover {
+        transition: all .5s ease-in-out;
+        border-radius: 5px;
+        background-color: #fff;
+        color: rgb(0, 0, 0);
+    }
+
+    .logo-initials {
+        font-size: 60px;
+        margin: 0px 20px;
+    }
 
     #close a {
         display: none;
+        transition: 0.4s;
+        background-color: #1d7baa;
     }
-
-
-
 }
 
 /* iPads, Tablets*/
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
 
-    .toggle-button {
+    .navbar-container {
+        height: 120px;
+    }
+
+    #open .navbar-links {
+        display: none;
+    }
+
+    .hamburger-button {
         display: flex;
         width: 100%;
         height: 100px;
@@ -175,21 +216,46 @@ h1 {
         color: white;
     }
 
-    .navbar-links {
-        display: none;
+    .hamburger-button button {
+        position: absolute;
+        top: 30px;
+        right: 0;
+        margin-right: 7px;
     }
 
-    #open {
-        height: 100%;
+    .mobile-menu {
+        display: flex;
         flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+        font-weight: 500;
+        margin-top: 50px;
+        position: absolute;
+        top: 80px;
     }
 
-    #open .navbar-links ul {
-        flex-direction: column;
+    .mobile-menu a {
+        text-decoration: none;
+        padding: 10px;
+    }
+
+    .mobile-menu a:hover {
+        transition: all .5s ease-in-out;
+        border-radius: 5px;
+        background-color: #fff;
+        color: rgb(0, 0, 0);
+        font-weight: 600;
+    }
+
+    .logo-initials {
+        font-size: 60px;
+        margin: 5px 20px 0;
     }
 
     #close a {
         display: none;
+        transition: 0.4s;
+        background-color: #1d7baa;
     }
 }
 
@@ -198,28 +264,13 @@ h1 {
 
 @media (min-width: 768px) and (max-width: 1000px) {
 
-    .toggle-button {
-        width: 100%;
-        height: 100px;
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
-        color: white;
+    .logo-initials {
+        padding-left: 20px;
+        transition: 0.4s;
     }
 
-
-
-    #open {
-        height: 100%;
-        flex-direction: column;
-    }
-
-    #open .navbar-links {
-        flex-direction: column;
-    }
-
-    #close a {
-        display: none;
+    .navbar-links li a {
+        margin: 20px;
     }
 
 }
