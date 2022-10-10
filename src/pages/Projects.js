@@ -1,7 +1,7 @@
 import React from 'react'
 import '../styles/projects.css'
 import ProjectItem from '../components/ProjectItem'
-import RedditGeeks from '../assets/RedditGeeks.jpg'
+import RedditGeeks from '../assets/RedditScreenshot7.jpg'
 import WeatherApp from '../assets/WeatherApp_merged7.jpg'
 import OnlineStoreCart from '../assets/Anna_Store_Best.jpg'
 import NewTabIcon from '../assets/new-window-white.svg'

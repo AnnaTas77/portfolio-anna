@@ -2,8 +2,10 @@ import React from 'react'
 
 const ProjectItem = ({ image, name, description, live, github }) => {
     return (
-        <div className='project-item'>
-            <div className='project-image' style={{ backgroundImage: `url(${image})` }}></div>
+        <div className='project-container'>
+            <div className='project-item'>
+                <div className='project-image' style={{ backgroundImage: `url(${image})` }}></div>
+            </div>
             <div className='project-card'>
                 <h1>{name}</h1>
                 <div className='project-description'>{description}</div>
@@ -13,6 +15,7 @@ const ProjectItem = ({ image, name, description, live, github }) => {
                 </div>
             </div>
         </div>
+
     )
 }
 

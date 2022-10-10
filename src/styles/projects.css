@@ -22,11 +22,44 @@
     height: 50%;
 }
 
+.project-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
 .project-item {
     display: flex;
-    width: 80%;
-    min-height: 700px;
+    min-height: 800px;
+    width: 100%;
+    justify-content: center;
     margin: 40px;
+}
+
+
+.project-image {
+    display: flex;
+    align-items: flex-start;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    justify-content: center;
+}
+
+.project-image:hover {
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in;
+}
+
+
+.project-card {
+    width: 25%;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
     text-align: center;
     background: rgba(255, 255, 255, 0.2);
@@ -34,36 +67,13 @@
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.44);
-
+    padding-bottom: 30px;
+    min-width: 250px;
 }
 
-.project-item:hover {
+.project-card:hover {
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
     transition: 0.3s ease-in;
-}
-
-
-.project-image {
-    display: flex;
-    align-items: flex-start;
-    justify-items: flex-start;
-    width: 75%;
-    background-repeat: no-repeat;
-    background-size: contain;
-
-    max-width: 800px;
-    height: auto;
-    object-fit: cover;
-    width: 100%;
-}
-
-
-.project-card {
-    width: 25%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
 }
 
 
@@ -78,7 +88,6 @@
     justify-content: center;
     align-items: center;
     font-size: 1.4rem;
-    text-align: left;
     padding: 20px;
 }
 
@@ -131,6 +140,19 @@
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
 
+    .project-container {
+        flex-direction: column;
+    }
+
+    .project-card {
+        width: 94%;
+        margin-top: -0px;
+        margin-bottom: 10px;
+        z-index: 10;
+        position: relative;
+        top: 0px;
+    }
+
     .projects {
         margin-top: 70px;
     }
@@ -169,11 +191,6 @@
         margin: 10px;
     }
 
-    .project-card {
-        width: 100%;
-        margin-top: -20px;
-    }
-
     .project-description {
         font-size: 1.2rem;
         padding: 0;
@@ -182,7 +199,7 @@
     }
 
     .project-socials {
-        margin-bottom: 50px;
+        margin-bottom: 0px;
     }
 
     .reddit-live span,
@@ -195,6 +212,10 @@
 /* iPads, Tablets*/
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
+
+    .project-container {
+        flex-direction: column;
+    }
 
     .projects {
         margin-top: 70px;
@@ -236,8 +257,12 @@
     }
 
     .project-card {
-        width: 100%;
-        margin-top: -40px;
+        width: 95%;
+        margin-top: -70px;
+        margin-bottom: -180px;
+        z-index: 10;
+        position: relative;
+        top: -250px;
     }
 
     .project-description {
@@ -248,7 +273,7 @@
     }
 
     .project-socials {
-        margin-bottom: 50px;
+        margin-bottom: 10px;
     }
 
     .reddit-live span,
@@ -261,6 +286,19 @@
 /* Small screens, laptops */
 
 @media (min-width: 769px) and (max-width: 1024px) {
+
+    .project-container {
+        flex-direction: column;
+    }
+
+    .project-card {
+        width: 95%;
+        margin-top: -70px;
+        margin-bottom: 40px;
+        z-index: 10;
+        position: relative;
+        top: -50px;
+    }
 
     .projects .title {
         font-size: 2.5rem;
@@ -292,12 +330,6 @@
         width: 100%;
         padding: 0;
         margin: 10px;
-    }
-
-    .project-card {
-        width: 100%;
-        margin-top: -30px;
-        margin-bottom: 35px;
     }
 
     .project-description {
