@@ -4,7 +4,7 @@ const ProjectItem = ({ image, name, description, live, github }) => {
     return (
         <div className='project-container'>
             <div className='project-item'>
-                <div className='project-image' style={{ backgroundImage: `url(${image})` }}></div>
+                <img src={image} className='project-image'></img>
             </div>
             <div className='project-card'>
                 <h1>{name}</h1>
