@@ -136,7 +136,7 @@
 
 /* Mobile devices */
 
-@media only screen and (min-width: 320px) and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
 
     .project-container {
         flex-direction: column;
@@ -144,7 +144,7 @@
     }
 
     .project-card {
-        width: 94%;
+        width: 95%;
         margin-top: -0px;
         margin-bottom: 10px;
         z-index: 10;
@@ -159,7 +159,7 @@
     .projects .title {
         font-size: 2.5rem;
         padding: 10px;
-        margin: 5px;
+        margin: 25px;
         width: 85%;
     }
 
@@ -219,6 +219,7 @@
         padding: 10px;
         margin: 5px;
         width: 85%;
+        margin: 35px;
     }
 
     .project-list {

@@ -13,9 +13,10 @@
     overflow: clip;
     box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
     transform: translatey(0px);
+    margin-bottom: 40px;
+    margin-top: 30px;
     -webkit-animation: float 6s ease-in-out infinite;
     animation: float 6s ease-in-out infinite;
-    margin-bottom: 40px;
 }
 
 .avatar img {
@@ -77,10 +78,10 @@
 
 
 
-
 /* Small Devices */
 
-@media only screen and (min-width: 320px) and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
+
 
     .about-me {
         padding-top: 135px;
