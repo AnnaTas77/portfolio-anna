@@ -14,7 +14,7 @@
     box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
     transform: translatey(0px);
     margin-bottom: 40px;
-    margin-top: 30px;
+    margin-top: 200px;
     -webkit-animation: float 6s ease-in-out infinite;
     animation: float 6s ease-in-out infinite;
 }
@@ -44,7 +44,6 @@
 
 .about-me {
     width: 100%;
-    height: calc(100vh - 100px);
     display: flex;
     flex-direction: column;
     justify-content: center;

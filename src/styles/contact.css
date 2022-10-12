@@ -17,6 +17,8 @@
 
 .social-media {
     display: flex;
+    margin-bottom: 100px;
+    margin-top: 20px;
 }
 
 .icon-container svg {
@@ -27,7 +29,7 @@
 
 .icon-container svg:hover {
     transform: scale(1.1);
-    transition: all .2s ease-in-out;
+    transition: all .2s ease;
 }
 
 

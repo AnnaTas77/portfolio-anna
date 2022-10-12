@@ -1,3 +1,8 @@
+:root {
+    --card-width: 30%;
+    --image-width: calc(var(--card-width) * 3);
+}
+
 .projects {
     width: 100%;
     height: auto;
@@ -5,6 +10,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
 }
 
 .projects .title {
@@ -26,121 +32,121 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 100vw;
     margin-bottom: 40px;
+    margin-top: 50px;
 }
 
 .project-item {
     display: flex;
-    width: 100%;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    width: 100%;
     margin: 40px;
+
+    position: relative;
+    max-width: var(--card-width);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    text-align: center;
+    transition: 0.4s;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+.project-item:hover {
+    --card-width: 40%;
+    --image-width: calc(var(--card-width)*2.3);
 }
 
 
 .project-image {
     display: flex;
     align-items: flex-start;
-    width: 100%;
-    height: auto;
     justify-content: center;
+
+    position: relative;
+    margin: -7rem auto 1.2rem;
+    width: var(--image-width);
+    height: auto;
+    border-radius: 1rem;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
+    transition: 0.4s;
+    overflow: hidden;
+    border: 2px solid #fff;
 }
 
 .project-image:hover {
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
-    transition: 0.3s ease-in;
+    margin-top: -4rem;
 }
 
-
-.project-card {
-    width: 25%;
-    min-width: 250px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    background: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    padding-bottom: 30px;
-    min-width: 250px;
-}
-
-.project-card:hover {
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
-    transition: 0.3s ease-in;
-}
-
-
-.project-item h1 {
-    font-size: 2rem;
-    font-weight: 350;
+.project-item .name {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .project-description {
-    width: 60%;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: 0.4s;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.project-item:hover .project-description {
+    max-height: 300px;
+    opacity: 1;
+    overflow: visible;
     font-size: 1.4rem;
-    padding: 20px;
 }
 
 .project-socials {
     display: flex;
-    padding-top: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
 }
 
-
-.live-link {
-    margin-right: 20px;
+.live-link,
+.github-code {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    padding: 0.5rem 0.7rem;
+    border-radius: 1rem;
+    color: #FFF;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0 1rem;
+    min-width: 120px;
+    transition: 0.4s;
 }
 
-.reddit-live {
-    font-size: 1.2rem;
-    text-decoration: none;
-}
-
-.reddit-live:hover {
-    text-decoration: underline;
-}
-
-.reddit-live span,
-.reddit-code span {
-    font-size: 1.4rem;
-    font-weight: 600;
-    padding: 3px;
-}
-
-
-.reddit-code {
-    font-size: 1.2rem;
-    text-decoration: none;
-}
-
-.reddit-code:hover {
-    text-decoration: underline;
-}
-
-
-.reddit-code h3::before {
-    content: url('../assets/open-new-tab.svg');
-    margin-right: 4px;
-
+.live-link:hover,
+.github-code:hover {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    transform: translateY(-0.5rem) scale(1.15);
+    border: 1px solid white;
 }
 
 
 
-/* Mobile devices */
+
+/* MOBILE */
 
 @media only screen and (max-width: 480px) {
 
     .project-container {
         flex-direction: column;
         margin-bottom: 40px;
+        width: 100%;
     }
 
     .project-card {
@@ -168,41 +174,55 @@
     }
 
     .project-item {
-        flex-direction: column;
-        width: 95%;
-        min-height: auto;
-        justify-content: flex-start;
-        align-items: center;
-        text-align: center;
-        margin: 0px;
+        max-width: 80%;
+
     }
 
-    .project-item h1 {
-        font-size: 2rem;
-        width: 100%;
-        padding: 0;
-        margin: 10px;
+    .project-image {
+        margin: -3rem auto 1rem;
+    }
+
+    .project-image:hover {
+        margin: -3rem auto 1rem;
+    }
+
+    .project-item .name {
+        font-size: 1.3rem;
+        font-weight: 600;
     }
 
     .project-description {
+        overflow: visible;
+        opacity: 1;
         font-size: 1.2rem;
         padding: 0;
         text-align: center;
-        width: 80%;
+        width: 90%;
+        min-height: 300px;
+    }
+
+    .project-item:hover .project-description {
+        overflow: visible;
+        opacity: 1;
+        font-size: 1.2rem;
+        padding: 0;
+        text-align: center;
+        width: 90%;
+        min-height: 300px;
     }
 
     .project-socials {
         margin-bottom: 0px;
     }
 
-    .reddit-live span,
-    .reddit-code span {
+    .live-link,
+    .github-code {
         font-size: 1.2rem;
     }
 
 }
 
-/* iPads, Tablets*/
+/* MEDIUM SCREENS*/
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
 
@@ -226,22 +246,9 @@
         width: 90%;
     }
 
-    .project-item {
-        flex-direction: column;
-        width: 95%;
-        height: 50%;
-        min-height: auto;
-        justify-content: flex-start;
-        align-items: center;
-        text-align: center;
-        margin: 0px;
-    }
-
-    .project-item h1 {
-        font-size: 2rem;
-        width: 100%;
-        padding: 0;
-        margin-top: 50px;
+    .project-item .name {
+        font-size: 1.6rem;
+        margin-bottom: 2.5rem;
     }
 
     .project-card {
@@ -267,7 +274,7 @@
 
 }
 
-/* Small screens, laptops */
+/* LAPTOPS */
 
 @media (min-width: 769px) and (max-width: 1024px) {
 
@@ -301,11 +308,9 @@
         margin: 20px;
     }
 
-    .project-item h1 {
+    .project-item .name {
         font-size: 2rem;
-        width: 100%;
-        padding: 0;
-        margin: 10px;
+        margin-bottom: 2.5rem;
     }
 
     .project-description {
@@ -326,7 +331,7 @@
     }
 }
 
-/* Large Devices */
+/* LARGER */
 
 @media (min-width: 1025px) and (max-width: 1200px) {
 
