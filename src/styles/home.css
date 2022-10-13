@@ -1,7 +1,6 @@
 .home {
     width: 100%;
     align-items: center;
-
 }
 
 .avatar {
@@ -13,8 +12,8 @@
     overflow: clip;
     box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
     transform: translatey(0px);
-    margin-bottom: 40px;
-    margin-top: 200px;
+    margin-bottom: 50px;
+    margin-top: 150px;
     -webkit-animation: float 6s ease-in-out infinite;
     animation: float 6s ease-in-out infinite;
 }
@@ -55,7 +54,7 @@
 .about-me h2 {
     display: flex;
     justify-content: center;
-    font-size: 2rem;
+    font-size: 1.7rem;
     padding: 5px;
     font-weight: 350;
     width: 80%;
@@ -64,9 +63,9 @@
 
 .prompt {
     display: flex;
-    font-size: 2rem;
+    font-size: 1.7rem;
     width: 50%;
-    margin-bottom: 45px;
+    margin-bottom: 75px;
 }
 
 .wave {
@@ -77,7 +76,7 @@
 
 
 
-/* Small Devices */
+/* MOBILE */
 
 @media only screen and (max-width: 480px) {
 
@@ -87,6 +86,10 @@
         max-height: 700px;
     }
 
+    .avatar {
+        margin-top: 50px;
+    }
+
     .about-me h2 {
         font-size: 1.7rem;
         padding: 0;
@@ -109,7 +112,7 @@
     }
 }
 
-/* iPads, Tablets*/
+/* MEDIUM SCREENS */
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
 
@@ -118,6 +121,9 @@
         max-height: 600px;
     }
 
+    .avatar {
+        margin-top: 50px;
+    }
 
     .about-me h2 {
         font-size: 1.7rem;
@@ -143,7 +149,7 @@
 
 
 
-/* Larger Devices */
+/* LAPTOPS */
 
 @media (min-width: 768px) and (max-width: 1024px) {
 
@@ -152,11 +158,18 @@
         max-height: 700px;
     }
 
+    .avatar {
+        margin-top: 100px;
+        margin-bottom: 50px;
+
+    }
+
     .about-me h2 {
         margin-top: 200px;
         width: 85%;
         padding: 0;
         margin: 0;
+        font-size: 1.7rem;
     }
 
     .wave {
@@ -170,12 +183,14 @@
     }
 
     .prompt {
+        font-size: 1.5rem;
+        width: 80%;
         margin-top: 45px;
     }
 
 }
 
-/* Large Devices */
+/* LARGER SCREENS */
 
 @media (min-width: 1025px) and (max-width: 1200px) {
 
@@ -184,8 +199,14 @@
         max-height: 600px;
     }
 
+    .avatar {
+        margin-top: 90px;
+        margin-bottom: 50px;
+    }
+
     .about-me h2 {
         margin-top: 200px;
+        font-size: 1.7rem;
         width: 85%;
         padding: 0;
         margin: 0;
@@ -203,7 +224,10 @@
     }
 
     .prompt {
-        margin-top: 45px;
+        display: flex;
+        font-size: 1.7rem;
+        width: 80%;
+        margin-bottom: 60px;
     }
 
 }

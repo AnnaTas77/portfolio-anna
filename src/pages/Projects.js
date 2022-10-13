@@ -26,7 +26,7 @@ const Projects = () => {
                     image={WeatherApp}
                     description='A simple weather app created with JavaScript, CSS and HTML. The app returns current weather data from the Open Weather Map API via Fetch API.'
                     live='https://annatas-weather-app.netlify.app/'
-                    github='https://github.com/AnnaTas77/redditgeeks'
+                    github='https://github.com/AnnaTas77/weather-app'
                 />
 
                 <ProjectItem

@@ -15,7 +15,7 @@
 
 .projects .title {
     text-align: center;
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: bolder;
 }
 
@@ -34,7 +34,7 @@
     justify-content: center;
     width: 100vw;
     margin-bottom: 40px;
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 .project-item {
@@ -83,8 +83,9 @@
 }
 
 .project-item .name {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+    margin-top: 1.2rem;
+    margin-bottom: 0rem;
 }
 
 .project-description {
@@ -96,20 +97,22 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-top: 2rem;
 }
 
 .project-item:hover .project-description {
     max-height: 300px;
     opacity: 1;
     overflow: visible;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
+    width: 95%;
 }
 
 .project-socials {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
 }
 
 .live-link,
@@ -119,15 +122,21 @@
     outline: none;
     background: none;
     cursor: pointer;
-    padding: 0.5rem 0.7rem;
+    padding: 0.7rem 0.7rem;
     border-radius: 1rem;
     color: #FFF;
-    font-size: 1.25rem;
+    font-size: 1.3rem;
     font-weight: 700;
-    margin: 0 1rem;
-    min-width: 120px;
+    margin: 1.1rem 1.5rem;
+    min-width: 150px;
     transition: 0.4s;
 }
+
+.live-link a,
+.github-code a {
+    text-decoration: none;
+}
+
 
 .live-link:hover,
 .github-code:hover {
@@ -145,17 +154,8 @@
 
     .project-container {
         flex-direction: column;
-        margin-bottom: 40px;
+        margin-bottom: -70px;
         width: 100%;
-    }
-
-    .project-card {
-        width: 95%;
-        margin-top: -0px;
-        margin-bottom: 10px;
-        z-index: 10;
-        position: relative;
-        top: 0px;
     }
 
     .projects {
@@ -163,10 +163,12 @@
     }
 
     .projects .title {
-        font-size: 2.5rem;
+        font-size: 2.3rem;
         padding: 10px;
         margin: 25px;
         width: 85%;
+        margin-top: -40px;
+        margin-bottom: -40px;
     }
 
     .project-list {
@@ -174,8 +176,17 @@
     }
 
     .project-item {
-        max-width: 80%;
+        min-width: 80%;
+    }
 
+    .project-item:hover .project-description {
+        overflow: visible;
+        opacity: 1;
+        font-size: 1.2rem;
+        padding: 0;
+        text-align: center;
+        width: 90%;
+        min-height: 300px;
     }
 
     .project-image {
@@ -199,25 +210,20 @@
         text-align: center;
         width: 90%;
         min-height: 300px;
+        margin-bottom: -20px;
+        margin-top: -20px;
     }
 
-    .project-item:hover .project-description {
-        overflow: visible;
-        opacity: 1;
-        font-size: 1.2rem;
-        padding: 0;
-        text-align: center;
-        width: 90%;
-        min-height: 300px;
-    }
 
     .project-socials {
-        margin-bottom: 0px;
+        margin-bottom: -10px;
     }
 
     .live-link,
     .github-code {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
+        margin: 0 0.5rem;
+        min-width: 100px;
     }
 
 }
@@ -228,6 +234,7 @@
 
     .project-container {
         flex-direction: column;
+        margin-bottom: -60px;
     }
 
     .projects {
@@ -246,31 +253,63 @@
         width: 90%;
     }
 
-    .project-item .name {
-        font-size: 1.6rem;
-        margin-bottom: 2.5rem;
-    }
-
-    .project-card {
-        width: 95%;
-        z-index: 10;
-    }
-
-    .project-description {
+    .project-item {
+        overflow: visible;
+        opacity: 1;
         font-size: 1.2rem;
         padding: 0;
         text-align: center;
-        width: 80%;
+        min-width: 80%;
+        min-height: 300px;
+    }
+
+    .project-description {
+        overflow: visible;
+        opacity: 1;
+        font-size: 1.2rem;
+        padding: 0;
+        text-align: center;
+        width: 90%;
+        min-height: 300px;
+        margin-top: -20px;
+        margin-bottom: -30px;
+    }
+
+    .project-item:hover .project-description {
+        min-height: 300px;
+        overflow: visible;
+        opacity: 1;
+        font-size: 1.2rem;
+        padding: 0;
+        text-align: center;
+    }
+
+    .project-image {
+        margin-top: -2rem;
+    }
+
+    .project-image:hover {
+        margin-top: -2rem;
+    }
+
+    .project-item .name {
+        font-size: 1.6rem;
+        margin-bottom: -1.8rem;
+        margin-top: 25px;
     }
 
     .project-socials {
-        margin-bottom: 10px;
+        margin-top: 30px;
+        margin-bottom: -20px;
     }
 
-    .reddit-live span,
-    .reddit-code span {
-        font-size: 1.2rem;
+    .live-link,
+    .github-code {
+        font-size: 1.1rem;
+        margin: 0 1.1rem;
+        min-width: 100px;
     }
+
 
 }
 
@@ -280,12 +319,7 @@
 
     .project-container {
         flex-direction: column;
-    }
-
-    .project-card {
-        width: 95%;
-        margin-bottom: 40px;
-        z-index: 10;
+        margin-bottom: 20px;
     }
 
     .projects .title {
@@ -298,40 +332,63 @@
     }
 
     .project-item {
-        flex-direction: column;
-        width: 95%;
-        height: 50%;
-        min-height: auto;
-        justify-content: flex-start;
-        align-items: center;
-        text-align: center;
-        margin: 20px;
-    }
-
-    .project-item .name {
-        font-size: 2rem;
-        margin-bottom: 2.5rem;
-    }
-
-    .project-description {
+        overflow: visible;
+        opacity: 1;
         font-size: 1.2rem;
         padding: 0;
         text-align: center;
-        width: 80%;
+        min-width: 80%;
+        min-height: 300px;
+    }
+
+    .project-description {
+        overflow: visible;
+        opacity: 1;
+        font-size: 1.2rem;
+        padding: 0;
+        text-align: center;
+        width: 90%;
+        min-height: 300px;
+        margin-top: -40px;
+        margin-bottom: -30px;
+    }
+
+    .project-item:hover .project-description {
+        min-height: 300px;
+        width: 90%;
+        overflow: visible;
+        opacity: 1;
+        font-size: 1.2rem;
+        padding: 0;
+        text-align: center;
+    }
+
+    .project-image {
+        margin-top: -3rem;
+    }
+
+    .project-image:hover {
+        margin-top: -3rem;
+    }
+
+    .project-item .name {
+        font-size: 1.8rem;
     }
 
     .project-socials {
-        margin: 0;
-
+        margin-bottom: -15px;
     }
 
-    .reddit-live span,
-    .reddit-code span {
-        font-size: 1.2rem;
+    .live-link,
+    .github-code {
+        font-size: 1.1rem;
+        margin: 0 1.1rem;
+        min-width: 100px;
     }
+
 }
 
-/* LARGER */
+/* LARGER SCREENS */
 
 @media (min-width: 1025px) and (max-width: 1200px) {
 
@@ -345,25 +402,48 @@
     }
 
     .project-item {
-        width: 90%;
-        min-height: 450px;
-        height: 50%;
-    }
-
-    .project-description {
+        overflow: visible;
+        opacity: 1;
         font-size: 1.2rem;
         padding: 0;
         text-align: center;
-        width: 80%;
+        min-width: 80%;
+        min-height: 300px;
     }
 
-    .project-socials {
-        margin: 0;
-
+    .project-description {
+        font-size: 2rem;
+        width: 85%;
     }
 
-    .reddit-live span,
-    .reddit-code span {
-        font-size: 1.2rem;
+    .project-item:hover .project-description {
+        font-size: 2rem;
+        width: 85%;
+        margin-bottom: 40px;
     }
+
+    .project-item .name {
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .project-image {
+        margin: -5.5rem auto 1.1rem;
+    }
+
+    .project-image:hover {
+        margin-top: -3.5rem;
+    }
+
+    .project-item .name {
+        font-size: 2rem;
+    }
+
+    .live-link,
+    .github-code {
+        font-size: 1.7rem;
+        margin: 1rem 3rem;
+        min-width: 150px;
+    }
+
 }

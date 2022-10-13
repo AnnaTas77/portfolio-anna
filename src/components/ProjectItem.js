@@ -12,12 +12,14 @@ const ProjectItem = ({ image, name, description, live, github }) => {
                 <div className='project-description'>
                     {description}
                     <div className='project-socials'>
-                        <button className='live-link'>
-                            <a href={live} aria-label='Live' target='_blank'>
-                                <img src={NewTabIcon} />
-                                <span>Live</span>
-                            </a>
-                        </button>
+                        {
+                            live ? <button className='live-link'>
+                                <a href={live} aria-label='Live' target='_blank'>
+                                    <img src={NewTabIcon} />
+                                    <span>Live</span>
+                                </a>
+                            </button> : ''
+                        }
                         <button className='github-code'>
                             <a href={github} aria-label='Code' target='_blank'>
                                 <img src={NewTabIcon} />

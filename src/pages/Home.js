@@ -1,6 +1,6 @@
 import React from 'react'
 import '../styles/home.css'
-import AnnasPic from '../assets/Anna_photo.jpg'
+import AnnasPic from '../assets/Anna_CV_Photo_BEST_2022_lrg.jpg'
 import Wave from '../assets/wave_emoji.svg'
 
 
