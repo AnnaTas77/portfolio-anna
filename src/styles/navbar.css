@@ -8,12 +8,13 @@
     font-size: 1.5rem;
     z-index: 100;
     position: fixed;
-    transition: 0.25s;
+    /* position: relative; */
+    transition: 0.4s;
     box-shadow: 0 4px 12px 0px rgba(0, 0, 0, 0.32);
 }
 
 .navbar-small {
-    height: 70px;
+    height: 85px;
 }
 
 h1 {
@@ -35,12 +36,12 @@ h1 {
         20px 20px #000000;
     transition: 0.4s;
     margin-left: 30px;
+    padding-bottom: 10px;
 }
 
 .logo-initials-small {
     font-size: 50px;
 }
-
 
 .navbar-links {
     display: flex;
@@ -75,6 +76,24 @@ h1 {
     color: rgb(0, 0, 0);
 }
 
+#open {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #1d7baa;
+    display: flex;
+    align-items: flex-start;
+    z-index: 110;
+    transition: all .5s ease-in-out;
+}
+
+
+#open .navbar-links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    z-index: 10;
+}
+
 
 .hamburger-button {
     display: none;
@@ -97,45 +116,20 @@ h1 {
 }
 
 .mobile-menu {
-    display: none;
-}
-
-#open {
-    height: 100vh;
-    background-color: #1d7baa;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-
-
-#open .navbar-links {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100%;
-    z-index: 10;
-}
-
-#open a {
-    text-align: center;
-    margin: 0;
-}
-
-.mobile-menu {
+    /* min-height: 100vh; */
     display: none;
     flex-direction: column;
-    /* height: 100vh; */
     width: 100vw;
     font-weight: 600;
-    margin-top: 50px;
     position: absolute;
-    top: 80px;
+    top: 100px;
+}
+
+.mobile-menu a {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
 }
 
 
@@ -148,10 +142,19 @@ h1 {
         height: 100px;
     }
 
+    .logo-initials {
+        font-size: 60px;
+        margin: 0px 20px;
+    }
+
+    .logo-initials-small {
+        font-size: 60px;
+        margin: 0px 20px;
+    }
+
     #open .navbar-links {
         display: none;
     }
-
 
     .hamburger-button {
         display: flex;
@@ -163,9 +166,6 @@ h1 {
     }
 
     .hamburger-button button {
-        position: absolute;
-        top: 30px;
-        right: 0;
         margin-right: 7px;
     }
 
@@ -175,26 +175,18 @@ h1 {
 
     .mobile-menu a {
         text-decoration: none;
-        padding: 10px;
+        padding: 20px;
         font-weight: 600;
     }
 
     .mobile-menu a:hover {
         transition: all .5s ease-in-out;
-        border-radius: 5px;
         background-color: #fff;
         color: rgb(0, 0, 0);
     }
 
-    .logo-initials {
-        font-size: 60px;
-        margin: 0px 20px;
-    }
-
     #close a {
         display: none;
-        transition: 0.4s;
-        background-color: #1d7baa;
     }
 }
 
@@ -203,7 +195,17 @@ h1 {
 @media only screen and (min-width: 481px) and (max-width: 768px) {
 
     .navbar-container {
-        height: 120px;
+        height: 100px;
+    }
+
+    .logo-initials {
+        font-size: 60px;
+        margin: 0px 20px;
+    }
+
+    .logo-initials-small {
+        font-size: 60px;
+        margin: 0px 20px;
     }
 
     #open .navbar-links {
@@ -220,9 +222,6 @@ h1 {
     }
 
     .hamburger-button button {
-        position: absolute;
-        top: 30px;
-        right: 0;
         margin-right: 7px;
     }
 
@@ -232,26 +231,18 @@ h1 {
 
     .mobile-menu a {
         text-decoration: none;
-        padding: 10px;
+        padding: 25px;
     }
 
     .mobile-menu a:hover {
         transition: all .5s ease-in-out;
-        border-radius: 5px;
         background-color: #fff;
         color: rgb(0, 0, 0);
         font-weight: 600;
     }
 
-    .logo-initials {
-        font-size: 60px;
-        margin: 5px 20px 0;
-    }
-
     #close a {
         display: none;
-        transition: 0.4s;
-        background-color: #1d7baa;
     }
 }
 
@@ -259,11 +250,6 @@ h1 {
 /* LARGER DEVICES */
 
 @media (min-width: 768px) and (max-width: 1000px) {
-
-    .logo-initials {
-        padding-left: 20px;
-        transition: 0.4s;
-    }
 
     .navbar-links li a {
         margin: 20px;

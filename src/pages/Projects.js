@@ -8,6 +8,7 @@ import OnlineStoreCart from '../assets/Anna_Store_Best.jpg'
 
 
 const Projects = () => {
+
     return (
         <div className='projects' id="projects">
             <h1 className='title'>Personal Projects</h1>

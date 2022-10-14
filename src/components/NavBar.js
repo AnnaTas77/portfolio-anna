@@ -32,7 +32,6 @@ const NavBar = () => {
                 </ul>
             </div>
 
-            {/* Hamburger */}
             <div className="hamburger-button">
                 <button onClick={handleClick}>
                     {!expandNavbar ? <FaBars /> : <FaTimes />}

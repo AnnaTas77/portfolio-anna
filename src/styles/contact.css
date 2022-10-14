@@ -12,7 +12,7 @@
 .connect {
     font-size: 2rem;
     padding: 5px;
-    font-weight: 350;
+    font-weight: 600;
 }
 
 .social-media {
@@ -25,16 +25,17 @@
     margin: 20px;
     font-size: 60px;
     cursor: pointer;
+    color: rgba(255, 255, 255, 0.64);
+    transition: 0.5s ease-in-out;
 }
 
 .icon-container svg:hover {
-    transform: scale(1.1);
-    transition: all .2s ease;
+    color: white;
 }
 
 
 
-/* Mobile devices */
+/* MOBILE */
 
 @media only screen and (max-width: 480px) {
 
@@ -42,27 +43,55 @@
         margin-top: 100px;
         height: 30%;
     }
+
+    .connect {
+        font-size: 1.8rem;
+    }
+
+    .icon-container svg {
+        font-size: 45px;
+        color: white;
+    }
+
 }
 
-/* iPads, Tablets*/
+/* IPADS, TABLETS*/
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
     .contact {
         margin-top: 100px;
         height: 30%;
     }
+
+    .connect {
+        font-size: 1.8rem;
+    }
+
+    .icon-container svg {
+        font-size: 45px;
+        color: white;
+    }
+
 }
 
-/* Small screens, laptops */
+/* LAPTOPS */
 
 @media (min-width: 769px) and (max-width: 1024px) {
     .contact {
         margin-top: 100px;
         height: 30%;
     }
+
+    .connect {
+        font-size: 1.8rem;
+    }
+
+    .icon-container svg {
+        font-size: 55px;
+    }
 }
 
-/* Large Devices */
+/* LARGE DEVICES */
 
 @media (min-width: 1025px) and (max-width: 1200px) {
     .contact {
