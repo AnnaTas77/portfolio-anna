@@ -13,7 +13,7 @@ const Home = () => {
                     <img src={AnnasPic} alt="Anna's photo" />
                 </div>
                 <div><h2>Hi! <span><img src={Wave} className="wave" /></span></h2></div>
-                <h2>I'm Anna, a web developer based in London.</h2>
+                <h2>I'm Anna, a front-end developer based in London.</h2>
                 <p className='prompt'>I enjoy design and problem solving.The technologies I use include JavaScript, React, Redux, HTML5 and CSS3. See below some of the projects I did while learning to code.</p>
             </div>
 
