@@ -66,12 +66,12 @@ h1 {
     font-weight: 600;
     padding: 9px 12px 9px 12px;
     border: 1px solid transparent;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .navbar-links a:hover {
     transition: all .5s ease-in-out;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: #fff;
     color: rgb(0, 0, 0);
 }
