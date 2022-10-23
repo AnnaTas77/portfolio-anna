@@ -114,18 +114,35 @@
     margin-top: 1.5rem;
 }
 
+
+/* .pulse {
+    animation: pulse-animation 2s infinite;
+    border-radius: 10px;
+}
+
+@keyframes pulse-animation {
+    0% {
+        box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.1);
+    }
+
+    100% {
+        box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
+    }
+} */
+
 .live-link,
 .github-code {
     appearance: none;
-    border: none;
     outline: none;
     background: none;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.37);
     cursor: pointer;
-    padding: 0.7rem 0.7rem;
+    padding: 0.5rem 0 0.5rem;
     color: #FFF0;
     font-size: 1.3rem;
     font-weight: 700;
-    margin: 1.1rem 1.5rem;
+    margin: 1.1rem 2rem;
     min-width: 150px;
     transition: 0.4s;
 }
@@ -138,11 +155,19 @@
 
 .live-link:hover,
 .github-code:hover {
+    animation: none;
     border-radius: 10px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
     transform: translateY(-0.5rem) scale(1.15);
     border: 1px solid rgba(255, 255, 255, 0.37);
 }
+
+.live-link a:hover,
+.github-code a:hover {
+    animation: none;
+
+}
+
 
 
 
@@ -222,9 +247,10 @@
 
     .live-link,
     .github-code {
-        font-size: 1.1rem;
-        margin: 0 0.5rem;
+        font-size: 1.15rem;
+        margin: 10px 16px 5px;
         min-width: 100px;
+        padding: 0.4rem 0rem;
     }
 
 }
@@ -303,8 +329,9 @@
     .live-link,
     .github-code {
         font-size: 1.1rem;
-        margin: 0 1.1rem;
+        margin: 1rem 1.8rem 1rem;
         min-width: 100px;
+        padding: 0.4rem 0rem;
     }
 
 

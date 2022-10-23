@@ -18,14 +18,14 @@ const ProjectItem = ({ image, name, description, live, github }) => {
                     {description}
                     <div className='project-socials'>
                         {
-                            live ? <button className='live-link' onClick={() => openUrl(live)}>
+                            live ? <button className='live-link glitch' onClick={() => openUrl(live)}>
                                 <a href={live} aria-label='Live' target='_blank'>
                                     <img src={NewTabIcon} />
-                                    <span>Live</span>
+                                    <span >Live</span>
                                 </a>
                             </button> : ''
                         }
-                        <button className='github-code' onClick={() => openUrl(github)}>
+                        <button className='github-code glitch' onClick={() => openUrl(github)}>
                             <a href={github} aria-label='Code' target='_blank'>
                                 <img src={NewTabIcon} />
                                 <span>Code</span>
