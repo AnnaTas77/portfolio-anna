@@ -18,20 +18,53 @@
 .social-media {
     display: flex;
     margin-bottom: 100px;
-    margin-top: 20px;
+    margin-top: 70px;
 }
 
-.icon-container svg {
-    margin: 20px;
+.icon-container {
+    display: flex;
+    color: #59c8ff;
+    background: white;
+    margin: 60px;
+    position: relative;
+    transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0, 0);
+    box-shadow: -20px 20px 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s ease-in-out;
     font-size: 60px;
     cursor: pointer;
-    color: rgba(255, 255, 255, 0.64);
     transition: 0.4s ease-in-out;
 }
 
-.icon-container svg:hover {
-    color: white;
-}
+
+.icon-container::before{
+    display: block;
+    content:"";
+    position: absolute;
+    background: rgba(255, 255, 255, 0.52);
+    width: 20px;
+    height: 100%;
+    left: -20px;
+    top: 10px;
+    transform: rotate(0deg) skewY(-45deg); 
+  }
+    
+  .icon-container::after{
+    display: block;
+      content:"";
+      position: absolute;
+      background: rgba(255, 255, 255, 0.52);
+      bottom: -20px;
+      left: -10px;
+      height: 20px;
+      width: 100%;
+      transform: rotate(0deg) skewX(-45deg); 
+  }
+  
+  .icon-container:hover{
+    transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(20px, -20px);
+    box-shadow: -50px 50px 30px rgba(0, 0, 0, 0.5);
+  }    
+
 
 
 
@@ -48,9 +81,28 @@
         font-size: 1.8rem;
     }
 
+    .social-media {
+        margin-top: 20px;
+    }
+
+    .icon-container {
+        margin:30px;
+    }
+
+    .icon-container::before {
+        width: 17px;
+        left: -17px;
+        top: 8px;
+    }
+
+    .icon-container::after{
+        height: 17px;
+        left: -9px;
+        bottom: -17px;  
+    }
+
     .icon-container svg {
-        font-size: 45px;
-        color: white;
+        font-size: 35px;
     }
 
 }
@@ -65,11 +117,19 @@
 
     .connect {
         font-size: 1.8rem;
+        margin-top: 100px;
+    }
+
+    .social-media {
+        margin-top: 20px;
+    }
+
+    .icon-container {
+        margin:40px;
     }
 
     .icon-container svg {
         font-size: 45px;
-        color: white;
     }
 
 }
@@ -84,6 +144,11 @@
 
     .connect {
         font-size: 1.8rem;
+        margin-top: 100px;
+    }
+
+    .social-media {
+        margin-top: 20px;
     }
 
     .icon-container svg {
@@ -94,8 +159,17 @@
 /* LARGE DEVICES */
 
 @media (min-width: 1025px) and (max-width: 1200px) {
+
     .contact {
         margin-top: 100px;
         height: 30%;
+    }
+
+    .connect {
+        margin-top: 100px;
+    }
+
+    .social-media {
+        margin-top: 20px;
     }
 }

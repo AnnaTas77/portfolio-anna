@@ -5,4 +5,33 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-top: 50px;
+}
+
+
+/* MOBILE */
+
+@media only screen and (max-width: 480px) {
+
+    .footer{
+        margin-top: 0px;
+    }
+}
+
+
+/* LAPTOPS */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .footer{
+        margin-top: 70px;
+    }
+}
+
+/* LARGE DEVICES */
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .footer{
+        margin-top: 100px;
+    }
 }

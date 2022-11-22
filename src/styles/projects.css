@@ -392,7 +392,26 @@
     }
 
     .project-description {
+        overflow: visible;
+        opacity: 1;
         font-size: 1.4rem;
+        padding: 0;
+        text-align: center;
+        width: 90%;
+        min-height: 300px;
+        margin-top: -50px;
+        margin-bottom: -30px;
+    }
+
+    .project-item:hover .project-description {
+        min-height: 300px;
+        overflow: visible;
+        opacity: 1;
+        font-size: 1.2rem;
+        padding: 0;
+        text-align: center;
+        margin-bottom: -20px;
+        margin-top: -20px;
     }
 
     .project-item:hover .project-description {
