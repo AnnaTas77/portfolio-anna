@@ -12,7 +12,7 @@ Web Development
 <a name="screenshots"></a>
 # Screenshots
 
-![Screenshot of the portfolio website ](./src/assets/PortfolioAnna.jpg "Portfolio Website")
+![Screenshot of the portfolio website ](./src/assets/PortfolioAnnaNEW.jpg "Portfolio Website")
 
 <a name="live"></a>
 # See live 
