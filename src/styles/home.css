@@ -23,7 +23,6 @@
     min-height: 100%;
 }
 
-
 @keyframes float {
     0% {
         box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
@@ -69,23 +68,32 @@
     margin-bottom: 75px;
 }
 
+.one {
+    margin-bottom: 25px;
+}
+
+.two {
+    margin: 0;
+}
+
+.three {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
 .wave {
     height: 40px;
     padding-left: 5px;
     padding-right: 5px;
 }
 
-
-
 /* MOBILE */
 
 @media only screen and (max-width: 480px) {
-
-
     .about-me {
-        padding-top: 135px;
-        /* max-height: 700px; */
-        height: 900px;
+        padding-top: 100px;
+        height: 1700px;
+        /* height: 900px; */
     }
 
     .avatar {
@@ -118,11 +126,11 @@
 /* MEDIUM SCREENS */
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-
     .about-me {
         /* padding-top: 180px; */
         /* max-height: 600px; */
-        height: 900px;
+        /* height: 900px; */
+        height: 1500px;
     }
 
     .avatar {
@@ -151,22 +159,20 @@
     }
 }
 
-
-
 /* LAPTOPS */
 
 @media (min-width: 768px) and (max-width: 1024px) {
-
     .about-me {
-        padding-top: 220px;
-        max-height: 700px;
+        /* padding-top: 220px;
+        max-height: 700px; */
+
+        height: 1250px;
     }
 
     .avatar {
         margin-top: 100px;
         margin-bottom: 50px;
-}
-
+    }
 
     .wave {
         display: flex;
@@ -181,7 +187,6 @@
         font-size: 1.5rem;
     }
 
-    
     .prompt {
         font-size: 1.5rem;
         width: 80%;
@@ -196,7 +201,6 @@
 /* LARGER SCREENS */
 
 @media (min-width: 1025px) and (max-width: 1200px) {
-
     .about-me {
         padding-top: 220px;
         max-height: 600px;
@@ -221,7 +225,6 @@
         font-size: 1.6rem;
     }
 
-
     .projects .title {
         font-size: 2rem;
     }
@@ -232,5 +235,4 @@
         width: 80%;
         margin-bottom: 40px;
     }
-
 }

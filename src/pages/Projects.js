@@ -14,7 +14,7 @@ const Projects = () => {
                 <ProjectItem
                     name="NC News"
                     image={NcNews}
-                    description="This application is designed to provide users with access to news articles, comments, topics, and user information through an intuitive and user-friendly interface."
+                    description="NC News is a full-stack project with a custom backend News API, mimicking Reddit's functionalities. The frontend serves as a user interface, enabling access to various API endpoints for seamless interaction with news content."
                     live="https://nc-news-anna.netlify.app/"
                     github={[
                         { label: "Frontend Code", url: "https://github.com/AnnaTas77/nc-news-frontend-project" },
@@ -23,9 +23,9 @@ const Projects = () => {
                 />
 
                 <ProjectItem
-                    name="Meteorite Landings Viewer"
+                    name="Meteorite Landings Interactive Map"
                     image={Meteorites}
-                    description="Visualizer of meteorite landings sites. Data is fetched from NASA API and sorted/displayed in a user friendly manner. "
+                    description="This project features an interactive map of meteorite landings, sourcing data from NASA's Meteorite Landings API. Users can conveniently sort the table of all known landings by name, year of discovery, and mass in grams by clicking the column headings."
                     github={["https://github.com/AnnaTas77/fe-react-data-visualisation"]}
                 />
 
