@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.a3a86059.css",
-    "main.js": "/static/js/main.23a60680.js",
+    "main.css": "/static/css/main.81a6b0ea.css",
+    "main.js": "/static/js/main.97c48ac7.js",
     "static/media/NcNews.png": "/static/media/NcNews.34e42de23aacbe701edf.png",
     "static/media/WeatherApp_merged7.jpg": "/static/media/WeatherApp_merged7.8ce9c64826d816e0cada.jpg",
     "static/media/Meteorite Landings Viewer.png": "/static/media/Meteorite Landings Viewer.0862b0561d4dc883fce7.png",
@@ -11,11 +11,11 @@
     "static/media/wave_emoji.svg": "/static/media/wave_emoji.bb99a08248330c8cd5f0c6ede5f85345.svg",
     "static/media/new-window-white.svg": "/static/media/new-window-white.0973fd059f04e10d71288562f9913db9.svg",
     "index.html": "/index.html",
-    "main.a3a86059.css.map": "/static/css/main.a3a86059.css.map",
-    "main.23a60680.js.map": "/static/js/main.23a60680.js.map"
+    "main.81a6b0ea.css.map": "/static/css/main.81a6b0ea.css.map",
+    "main.97c48ac7.js.map": "/static/js/main.97c48ac7.js.map"
   },
   "entrypoints": [
-    "static/css/main.a3a86059.css",
-    "static/js/main.23a60680.js"
+    "static/css/main.81a6b0ea.css",
+    "static/js/main.97c48ac7.js"
   ]
 }
