@@ -17,6 +17,7 @@
     text-align: center;
     font-size: 3rem;
     font-weight: bolder;
+    margin-top: 170px;
 }
 
 .project-list {
@@ -58,9 +59,8 @@
 
 .project-item:hover {
     --card-width: 40%;
-    --image-width: calc(var(--card-width)*2.3);
+    --image-width: calc(var(--card-width) * 2.3);
 }
-
 
 .project-image {
     display: flex;
@@ -123,7 +123,7 @@
     border: none;
     cursor: pointer;
     padding: 0.5rem 0 0.5rem;
-    color: #FFF0;
+    color: #fff0;
     font-size: 1.3rem;
     font-weight: 700;
     margin: 1.1rem 2rem;
@@ -140,7 +140,6 @@
     border: none;
 }
 
-
 .live-link:hover,
 .github-code:hover {
     animation: none;
@@ -153,19 +152,15 @@
 .live-link a:hover,
 .github-code a:hover {
     animation: none;
-
 }
 
-
-
 .pulsate {
-     animation: pulsate 3s infinite alternate;     
-     margin-left: 4px;
+    animation: pulsate 3s infinite alternate;
+    margin-left: 4px;
 }
 
 @keyframes pulsate {
-    
-  /* 100% {
+    /* 100% {
 
       text-shadow:
       0 0 4px #fff,
@@ -178,12 +173,12 @@
       0 0 150px #0fa;
   
   } */
-  
-  0% {
 
-    text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 4px #fff, 0 0 10px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 40px #fff;
+    0% {
+        text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 4px #fff, 0 0 10px #fff, 0 0 30px #fff, 0 0 40px #fff,
+            0 0 40px #fff;
 
-    /* text-shadow:
+        /* text-shadow:
     0 0 2px #fff,
     0 0 4px #fff,
     0 0 6px #fff,
@@ -192,20 +187,12 @@
     0 0 55px #fff,
     0 0 70px #fff,
     0 0 80px #fff; */
-
+    }
 }
-
-}
-
-
-
-
-
 
 /* MOBILE */
 
 @media only screen and (max-width: 480px) {
-
     .project-container {
         flex-direction: column;
         margin-bottom: -70px;
@@ -274,7 +261,6 @@
         margin-bottom: -10px;
     }
 
-
     .live-link,
     .github-code {
         font-size: 1.15rem;
@@ -282,13 +268,11 @@
         min-width: 100px;
         padding: 0.4rem 0rem;
     }
-
 }
 
 /* MEDIUM SCREENS*/
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-
     .project-container {
         flex-direction: column;
         margin-bottom: -60px;
@@ -367,14 +351,11 @@
         min-width: 100px;
         padding: 0.4rem 0rem;
     }
-
-
 }
 
 /* LAPTOPS */
 
 @media (min-width: 769px) and (max-width: 1024px) {
-
     .project-container {
         flex-direction: column;
         margin-bottom: 20px;
@@ -451,13 +432,11 @@
         min-width: 110px;
         padding: 10px;
     }
-
 }
 
 /* LARGER SCREENS */
 
 @media (min-width: 1025px) and (max-width: 1200px) {
-
     .projects .title {
         font-size: 2.5rem;
         width: 85%;
@@ -511,5 +490,4 @@
         margin: 1rem 3rem;
         min-width: 150px;
     }
-
 }
