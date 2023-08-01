@@ -227,9 +227,9 @@
         padding: 0;
         text-align: center;
         width: 90%;
-        min-height: 300px;
-        margin-bottom: -20px;
-        margin-top: -20px;
+        min-height: 400px;
+        /* margin-bottom: -20px;
+        margin-top: -20px; */
     }
 
     .project-item:hover .project-description {
@@ -265,7 +265,7 @@
     .github-code {
         font-size: 1.15rem;
         margin: 10px 16px 5px;
-        min-width: 100px;
+        min-width: 55px;
         padding: 0.4rem 0rem;
     }
 }
@@ -309,9 +309,9 @@
         padding: 0;
         text-align: center;
         width: 90%;
-        min-height: 300px;
-        margin-top: -20px;
-        margin-bottom: -30px;
+        min-height: 350px;
+        /* margin-top: -20px;
+        margin-bottom: -30px; */
     }
 
     .project-item:hover .project-description {
@@ -348,7 +348,7 @@
     .github-code {
         font-size: 1.1rem;
         margin: 1rem 1.8rem 1rem;
-        min-width: 100px;
+        min-width: 60px;
         padding: 0.4rem 0rem;
     }
 }
@@ -377,7 +377,7 @@
         padding: 0;
         text-align: center;
         min-width: 80%;
-        min-height: 300px;
+        min-height: 800px;
     }
 
     .project-description {

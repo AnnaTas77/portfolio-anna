@@ -22,13 +22,18 @@ const ProjectItem = ({ image, name, description, live, github }) => {
                                     <span className="pulsate">Live</span>
                                 </a>
                             </button>
-                        ) : (
-                            ""
-                        )}
+                        ) : null}
                         {github.map((githubLink) => {
                             return (
-                                <button className="github-code" onClick={() => openUrl(githubLink.url ? githubLink.url : githubLink)}>
-                                    <a href={githubLink.url ? githubLink.url : githubLink} aria-label="Code" target="_blank">
+                                <button
+                                    className="github-code"
+                                    onClick={() => openUrl(githubLink.url ? githubLink.url : githubLink)}
+                                >
+                                    <a
+                                        href={githubLink.url ? githubLink.url : githubLink}
+                                        aria-label="Code"
+                                        target="_blank"
+                                    >
                                         <img src={NewTabIcon} />
                                         <span className="pulsate">{githubLink.label ? githubLink.label : "Code"}</span>
                                     </a>
