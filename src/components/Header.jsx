@@ -1,11 +1,12 @@
 import { Link } from "react-scroll";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
+import ATLogo from "../assets/logos/AT Final.png";
 
 const Header = () => {
     return (
         <header className="flex w-full justify-between items-center fixed top-0 py-5 backdrop-blur-3xl z-[100]">
-            <Link to="home" smooth={true} className="cursor-pointer text-2xl px-5 font-bold text-gradient">
-                <p>ANNA</p> <p>TASHEVA</p>
+            <Link to="home" smooth={true} className="flex cursor-pointer text-2xl px-5 font-bold text-gradient">
+                <img src={ATLogo} alt="Anna Tasheva Logo" className="w-[65px] h-[60px]" />
             </Link>
 
             <div className="flex items-center lg:gap-7 gap-5 text-violet-400">
