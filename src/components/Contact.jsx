@@ -1,31 +1,151 @@
-import React from 'react'
-import { FaEnvelopeSquare, FaLinkedin, FaGithubSquare } from 'react-icons/fa'
-import '../styles/contact.css'
-
+import { useState } from "react";
+import { BsGithub, BsLinkedin } from "react-icons/bs";
 
 const Contact = () => {
+    const [formData, setFormData] = useState({ name: "", email: "", message: "" });
+
+    const handleChange = (event) => {
+        setFormData((prevFormData) => {
+            const { name, value } = event.target;
+            return { ...prevFormData, [name]: value };
+        });
+    };
+
+    <input type="hidden" name="access_key" value="1f848643-bc72-48da-b3cd-566fd149f5ea"></input>;
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+
+        const dataToSend = { ...formData, access_key: "1f848643-bc72-48da-b3cd-566fd149f5ea" };
+        var json = JSON.stringify(dataToSend);
+
+        fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                Accept: "application/json",
+            },
+            body: json,
+        })
+            .then(async (response) => {
+                let jsonResponse = await response.json();
+                if (response.status == 200) {
+                    console.log("Form submitted! ", jsonResponse);
+                    setFormData({ name: "", email: "", message: "" });
+                } else {
+                    console.log(response);
+                }
+            })
+            .catch((error) => {
+                console.log(error);
+            });
+    };
+
     return (
-        <div className='contact' id="contact">
-            <h2 className='connect'>Let's connect!</h2>
-            <div className='social-media'>
-                <a href="mailto:hello.annatas@gmail.com" aria-label="Anna's email - Click to copy." target="_blank">
-                    <div className="icon-container">
-                        <FaEnvelopeSquare />
+        <section className="flex flex-col w-full items-center justify-center min-h-screen " id="contact">
+            <h2 className="text-center w-full text-2xl mb-10 font-bold lg:text-3xl text-gradient mt-[120px]">
+                Let&#39;s connect!
+            </h2>
+            <div
+                className="flex items-center justify-center
+            w-full gap-6 text-cyan-400"
+            >
+                <a
+                    href="https://github.com/AnnaTas77"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center px-5 transition-colors duration-300 hover:text-violet-500 "
+                >
+                    <div>
+                        <BsGithub className="text-4xl " />
                     </div>
                 </a>
-                <a href="https://www.linkedin.com/in/anna-tasheva-48074085/" aria-label="Anna's LinkedIn profile." target="_blank">
-                    <div className="icon-container">
-                        <FaLinkedin />
-                    </div>
-                </a>
-                <a href="https://github.com/AnnaTas77" aria-label="Anna's GitHub profile." target="_blank">
-                    <div className="icon-container">
-                        <FaGithubSquare />
+                <a
+                    href="https://www.linkedin.com/in/anna-tasheva-48074085/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center px-5 transition-colors duration-300 hover:text-violet-500 "
+                >
+                    <div>
+                        <BsLinkedin className="text-4xl" />
                     </div>
                 </a>
             </div>
-        </div >
-    )
-}
+            <div className="py-10 flex flex-col lg:flex-row w-full items-center justify-center">
+                <div className="flex relative w-full max-w-[450px] min-h-[300px] md:min-h-[430px] rounded-lg overflow-hidden m-10 ">
+                    <iframe
+                        width="100%"
+                        height="100%"
+                        title="map"
+                        className="absolute inset-0"
+                        style={{ filter: "opacity(0.7)" }}
+                        src="https://www.google.com/maps/embed/v1/place?q=battersea+power+station+city&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+                    />
+                </div>
+                {/* FORM */}
+                <form
+                    className="flex flex-col w-full max-w-[450px] text-violet-200"
+                    onSubmit={handleSubmit}
+                    action="https://api.web3forms.com/submit"
+                    method="POST"
+                >
+                    <h2 className="text-center w-full text-xl mb-3  font-bold md:text-xl lg:text-xl text-gradient">
+                        Get in touch
+                    </h2>
+                    <div className="relative mb-4">
+                        <label htmlFor="name" className="text-gradient leading-7 text-md">
+                            Full Name
+                        </label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            value={formData.name}
+                            required
+                            onChange={handleChange}
+                            placeholder="Your full name..."
+                            className="w-full font-light bg-transparent rounded border border-violet-800 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out placeholder:italic placeholder:text-sm placeholder:text-violet-400"
+                        />
+                    </div>
+                    <div className="relative mb-4">
+                        <label htmlFor="email" className="text-gradient leading-7 text-md">
+                            Email Address
+                        </label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            value={formData.email}
+                            required
+                            onChange={handleChange}
+                            placeholder="Your email address..."
+                            className="w-full font-light bg-transparent rounded border border-violet-800 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out placeholder:italic placeholder:text-sm placeholder:text-violet-400"
+                        />
+                    </div>
+                    <div className="relative mb-4">
+                        <label htmlFor="message" className="text-gradient  leading-7 text-md">
+                            Message
+                        </label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            value={formData.message}
+                            required
+                            onChange={handleChange}
+                            placeholder="Your message..."
+                            className="w-full font-light bg-transparent rounded border border-violet-800 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out placeholder:italic placeholder:text-sm placeholder:text-violet-400"
+                        />
+                    </div>
+                    <button
+                        type="submit"
+                        className="btn-style w-[50%] self-center mt-2 hover:scale-110 transition-all ease-in-out duration-300"
+                    >
+                        Send
+                    </button>
+                </form>
+            </div>
+        </section>
+    );
+};
 
-export default Contact
+export default Contact;
