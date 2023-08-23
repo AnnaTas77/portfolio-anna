@@ -7,10 +7,9 @@ const ProjectItem = ({ image, name, description, live, github }) => {
     };
 
     return (
-        <div className="project-container">
-            <div className="project-item">
-                <img src={image} className="project-image"></img>
-
+        <div className="project-card">
+            <img src={image} className="project-image" alt="project screenshot"></img>
+            <div className="project-info">
                 <h1 className="name">{name}</h1>
                 <div className="project-description">
                     {description}

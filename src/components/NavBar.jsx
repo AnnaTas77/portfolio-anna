@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import Logo from "../assets/At_neon2.png";
 import "../styles/navbar.css";
+import { Link } from "react-scroll";
 
 const NavBar = () => {
     const [expandNavbar, setExpandNavbar] = useState(false);
@@ -25,13 +26,19 @@ const NavBar = () => {
             <div className="navbar-links">
                 <ul>
                     <li>
-                        <a href="#home">Home</a>
+                        <Link to="about" smooth={true} duration={500}>
+                            About
+                        </Link>
                     </li>
                     <li>
-                        <a href="#projects">Projects</a>
+                        <Link to="projects" smooth={true} duration={500}>
+                            Projects
+                        </Link>
                     </li>
                     <li>
-                        <a href="#contact">Contact</a>
+                        <Link to="contact" smooth={true} duration={500}>
+                            Contact
+                        </Link>
                     </li>
                 </ul>
             </div>
@@ -41,9 +48,15 @@ const NavBar = () => {
             </div>
 
             <div className="mobile-menu" onClick={handleClick}>
-                <a href="#home">Home</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
+                <Link to="home" smooth={true} duration={500}>
+                    Home
+                </Link>
+                <Link to="projects" smooth={true} duration={500}>
+                    Projects
+                </Link>
+                <Link to="contact" smooth={true} duration={500}>
+                    Contact
+                </Link>
             </div>
         </nav>
     );

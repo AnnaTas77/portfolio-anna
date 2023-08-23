@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/projects.css";
-import ProjectItem from "../components/ProjectItem";
+import ProjectItem from "./ProjectItem";
 import RedditGeeks from "../assets/RedditScreenshot7.jpg";
 import WeatherApp from "../assets/WeatherApp_merged7.jpg";
 import NcNews from "../assets/NcNews.png";

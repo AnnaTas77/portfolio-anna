@@ -1,7 +1,7 @@
 import NavBar from "./components/NavBar";
-import Home from "./pages/Home";
-import Projects from "./pages/Projects";
-import Contact from "./pages/Contact";
+import About from "./components/About";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import "./index.css";
 
@@ -9,12 +9,12 @@ function App() {
     return (
         <div className="App">
             <NavBar />
-            <div>
-                <Home />
+            <main>
+                <About />
                 <Projects />
                 <Contact />
-                <Footer />
-            </div>
+            </main>
+            <Footer />
         </div>
     );
 }
