@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 import "@lottiefiles/lottie-player";
 import AnnaPhoto from "../assets/Anna-gradient-outlineSQ.png";
+import LaptopAnimation from "../assets/animations/laptopAnimation.json";
 
 const About = () => {
     return (
@@ -60,7 +61,7 @@ const About = () => {
                             className="flex w-full absolute -z-1 md:top-[-50%] md:left-[47%] lg:left-[50%] lg:top-[-60%] left-[20%] top-[-10%] m-8"
                         >
                             <lottie-player
-                                src="https://lottie.host/df300741-e5c1-4516-a85c-95231f72eeb8/CI3XhlHzte.json"
+                                src={JSON.stringify(LaptopAnimation)}
                                 background="none"
                                 speed="1"
                                 style={{ display: "flex", maxWidth: "480px" }}
@@ -79,7 +80,8 @@ const About = () => {
                             className="flex w-full absolute -z-1 md:right-[9%] md:bottom-[-15%] lg:right-[26%] lg:bottom-[-3%] right-[14.5%] bottom-[-8%] m-1"
                         >
                             <lottie-player
-                                src="https://lottie.host/df300741-e5c1-4516-a85c-95231f72eeb8/CI3XhlHzte.json"
+                                // src="https://lottie.host/df300741-e5c1-4516-a85c-95231f72eeb8/CI3XhlHzte.json"
+                                src={JSON.stringify(LaptopAnimation)}
                                 background="none"
                                 speed="1"
                                 style={{ display: "flex", maxWidth: "250px", transform: "scaleX(-1)" }}
