@@ -1,5 +1,6 @@
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
+import { fadeIn } from "../variants";
 import { Link } from "react-scroll";
 
 const Home = () => {
@@ -7,6 +8,7 @@ const Home = () => {
         <section className="min-h-screen w-10/12 flex justify-center items-center pt-20" id="home">
             <div className="flex flex-col justify-center items-center w-full text-center font-secondary ">
                 <motion.h1
+                    variants={fadeIn("left", 0.5)}
                     initial="hidden"
                     whileInView={"show"}
                     viewport={{ once: false, amount: 0.7 }}
@@ -15,6 +17,7 @@ const Home = () => {
                     ANNA <span>TASHEVA</span>
                 </motion.h1>
                 <motion.p
+                    variants={fadeIn("right", 0.5)}
                     initial="hidden"
                     whileInView={"show"}
                     viewport={{ once: false, amount: 0.7 }}
@@ -30,6 +33,7 @@ const Home = () => {
                     />
                 </motion.p>
                 <motion.p
+                    variants={fadeIn("left", 0.5)}
                     initial="hidden"
                     whileInView={"show"}
                     viewport={{ once: false, amount: 0.7 }}
@@ -41,6 +45,7 @@ const Home = () => {
                 </motion.p>
 
                 <motion.div
+                    variants={fadeIn("right", 0.5)}
                     initial="hidden"
                     whileInView={"show"}
                     viewport={{ once: false, amount: 0.7 }}

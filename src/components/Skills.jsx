@@ -1,10 +1,18 @@
 import { skills } from "../data/skills";
+import { motion } from "framer-motion";
+import { fadeIn } from "../variants";
 
 const Skills = () => {
     return (
         <section className="flex flex-col items-center justify-center w-full max-w-[900px] min-h-screen " id="skills">
             <h2 className="text-center w-full text-xl mb-12 font-bold md:text-2xl lg:text-3xl text-gradient">Skills</h2>
-            <div className="flex flex-wrap items-center justify-center gap-7 mt-10">
+            <motion.div
+                variants={fadeIn("left", 0.5)}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{ once: false, amount: 0.3 }}
+                className="flex flex-wrap items-center justify-center gap-7 mt-10"
+            >
                 {skills.map((skill) => {
                     return (
                         <div key={skill.label} className="flex flex-col items-center justify-center">
@@ -13,7 +21,7 @@ const Skills = () => {
                         </div>
                     );
                 })}
-            </div>
+            </motion.div>
         </section>
     );
 };

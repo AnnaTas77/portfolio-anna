@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
+import { motion } from "framer-motion";
+import { fadeIn } from "../variants";
 
 const Contact = () => {
     const [formData, setFormData] = useState({ name: "", email: "", message: "" });
@@ -81,8 +83,15 @@ const Contact = () => {
                     </div>
                 </a>
             </div>
+            {/* MAP */}
             <div className="py-10 flex flex-col lg:flex-row w-full items-center justify-center">
-                <div className="flex relative w-full max-w-[450px] min-h-[300px] md:min-h-[430px] rounded-lg overflow-hidden m-10 ">
+                <motion.div
+                    variants={fadeIn("right", 0.5)}
+                    initial="hidden"
+                    whileInView={"show"}
+                    viewport={{ once: false, amount: 0.3 }}
+                    className="flex relative w-full max-w-[450px] min-h-[300px] md:min-h-[430px] rounded-lg overflow-hidden m-10 "
+                >
                     <iframe
                         width="100%"
                         height="100%"
@@ -91,9 +100,13 @@ const Contact = () => {
                         style={{ filter: "opacity(0.7)" }}
                         src="https://www.google.com/maps/embed/v1/place?q=battersea+power+station+city&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
                     />
-                </div>
+                </motion.div>
                 {/* FORM */}
-                <form
+                <motion.form
+                    variants={fadeIn("left", 0.5)}
+                    initial="hidden"
+                    whileInView={"show"}
+                    viewport={{ once: false, amount: 0.3 }}
                     className="relative flex flex-col w-full max-w-[450px] text-violet-200"
                     onSubmit={handleSubmit}
                     action="https://api.web3forms.com/submit"
@@ -179,7 +192,7 @@ const Contact = () => {
                             Oops! Something went wrong. Please try again.
                         </p>
                     </div>
-                </form>
+                </motion.form>
             </div>
         </section>
     );

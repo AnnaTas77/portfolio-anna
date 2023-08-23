@@ -1,5 +1,7 @@
 import { TbWindowMaximize } from "react-icons/tb";
 import { BsGithub } from "react-icons/bs";
+import { motion } from "framer-motion";
+import { fadeIn } from "../variants";
 
 const ProjectCard = ({ title, description, image, tech, live, github }) => {
     return (
@@ -14,8 +16,22 @@ const ProjectCard = ({ title, description, image, tech, live, github }) => {
             </div>
             <div className="flex flex-col justify-center items-center w-full">
                 <p className="flex text-3xl text-gradient my-5 text-center">{title}</p>
-                <p className="flex w-[85%] text-center">{description}</p>
-                <p className="text-gradient flex flex-wrap items-center justify-center w-full mt-5 font-bold text-center">
+                <motion.p
+                    variants={fadeIn("left", 0.5)}
+                    initial="hidden"
+                    whileInView={"show"}
+                    viewport={{ once: false, amount: 0.3 }}
+                    className="flex w-[85%] text-center"
+                >
+                    {description}
+                </motion.p>
+                <motion.p
+                    variants={fadeIn("right", 0.5)}
+                    initial="hidden"
+                    whileInView={"show"}
+                    viewport={{ once: false, amount: 0.3 }}
+                    className="text-gradient flex flex-wrap items-center justify-center w-full mt-5 font-bold text-center"
+                >
                     {tech.map((item) => {
                         return (
                             <span key={item} className="px-3 flex">
@@ -23,8 +39,14 @@ const ProjectCard = ({ title, description, image, tech, live, github }) => {
                             </span>
                         );
                     })}
-                </p>
-                <div className="flex flex-wrap items-center justify-center gap-6 mx-3 mt-7 mb-5 w-[85%] text-lg">
+                </motion.p>
+                <motion.div
+                    variants={fadeIn("right", 0.5)}
+                    initial="hidden"
+                    whileInView={"show"}
+                    viewport={{ once: false, amount: 0.3 }}
+                    className="flex flex-wrap items-center justify-center gap-6 mx-3 mt-7 mb-5 w-[85%] text-lg"
+                >
                     <a
                         href={live}
                         target="_blank"
@@ -66,7 +88,7 @@ const ProjectCard = ({ title, description, image, tech, live, github }) => {
                             );
                         })
                     )}
-                </div>
+                </motion.div>
             </div>
         </div>
     );

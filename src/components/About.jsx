@@ -1,4 +1,5 @@
-import { color, motion } from "framer-motion";
+import { motion } from "framer-motion";
+import { fadeIn } from "../variants";
 import "@lottiefiles/lottie-player";
 import AnnaPhoto from "../assets/Anna-gradient-outlineSQ.png";
 
@@ -7,17 +8,24 @@ const About = () => {
         <section
             className="flex flex-col items-center justify-center w-full max-w-[1180px] min-h-screen pt-44"
             id="about"
+            data-aos="fade-up"
         >
             <h2 className="text-gradient text-center w-full text-xl py-5 mb-10 font-bold md:text-2xl lg:text-3xl">
                 About me
             </h2>
-            <h3 className="mb-8 font-bold text-center">
+            <motion.h3
+                variants={fadeIn("left", 0.5)}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{ once: false, amount: 0.3 }}
+                className="mb-8 font-bold text-center"
+            >
                 I am a <span className="text-gradient">Junior Software Developer</span> based in London.
-            </h3>
+            </motion.h3>
             <div className="flex flex-col-reverse w-full gap-4 lg:flex-row-reverse justify-center items-center lg:items-start p-3  rounded-md">
                 <div className="flex relative mt-3">
                     <motion.div
-                        // variants={fadeIn("left", 0.5)}
+                        variants={fadeIn("left", 0.5)}
                         initial="hidden"
                         whileInView={"show"}
                         viewport={{ once: false, amount: 0.3 }}
@@ -43,14 +51,14 @@ const About = () => {
                         </div>
                     </motion.div>
 
-                    <motion.div
-                        // variants={fadeIn("right", 0.3)}
-                        initial="hidden"
-                        whileInView={"show"}
-                        viewport={{ once: false, amount: 0.3 }}
-                        className="flex items-center justify-center bg-[url('../assets/about.png')] "
-                    >
-                        <div className="flex w-full absolute -z-1 md:left-28 lg:left-[55%] lg:top-[-70%] left-10 top-0 m-8">
+                    <div className="flex items-center justify-center ">
+                        <motion.div
+                            variants={fadeIn("right", 0.3)}
+                            initial="hidden"
+                            whileInView={"show"}
+                            viewport={{ once: false, amount: 0.3 }}
+                            className="flex w-full absolute -z-1 md:left-28 lg:left-[55%] lg:top-[-70%] left-10 top-0 m-8"
+                        >
                             <lottie-player
                                 src="https://lottie.host/df300741-e5c1-4516-a85c-95231f72eeb8/CI3XhlHzte.json"
                                 background="none"
@@ -61,9 +69,15 @@ const About = () => {
                                 direction="1"
                                 mode="normal"
                             ></lottie-player>
-                        </div>
+                        </motion.div>
 
-                        <div className="flex w-full absolute -z-1 md:right-10 lg:right-[26%] right-0 lg:bottom-[-3%] bottom-0 m-1">
+                        <motion.div
+                            variants={fadeIn("right", 0.3)}
+                            initial="hidden"
+                            whileInView={"show"}
+                            viewport={{ once: false, amount: 0.3 }}
+                            className="flex w-full absolute -z-1 md:right-10 lg:right-[26%] right-0 lg:bottom-[-3%] bottom-0 m-1"
+                        >
                             <lottie-player
                                 src="https://lottie.host/df300741-e5c1-4516-a85c-95231f72eeb8/CI3XhlHzte.json"
                                 background="none"
@@ -75,11 +89,15 @@ const About = () => {
                                 direction="1"
                                 mode="normal"
                             ></lottie-player>
-                        </div>
-                    </motion.div>
+                        </motion.div>
+                    </div>
                 </div>
                 {/* IMAGE */}
-                <img
+                <motion.img
+                    variants={fadeIn("right", 0.5)}
+                    initial="hidden"
+                    whileInView={"show"}
+                    viewport={{ once: false, amount: 0.3 }}
                     src={AnnaPhoto}
                     alt="Anna's photo"
                     className="shadow rounded-full lg:rounded-md w-28 h-28 md:w-48 md:h-auto max-h-[200px] mt-3 mb-7"
