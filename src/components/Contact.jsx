@@ -1,8 +1,10 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 
 const Contact = () => {
     const [formData, setFormData] = useState({ name: "", email: "", message: "" });
+    const [isError, setIsError] = useState(false);
+    const [messageSent, setMessageSent] = useState(false);
 
     const handleChange = (event) => {
         setFormData((prevFormData) => {
@@ -10,8 +12,6 @@ const Contact = () => {
             return { ...prevFormData, [name]: value };
         });
     };
-
-    <input type="hidden" name="access_key" value="1f848643-bc72-48da-b3cd-566fd149f5ea"></input>;
 
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -27,17 +27,27 @@ const Contact = () => {
             },
             body: json,
         })
-            .then(async (response) => {
-                let jsonResponse = await response.json();
-                if (response.status == 200) {
-                    console.log("Form submitted! ", jsonResponse);
+            .then((response) => {
+                let jsonResponse = response.json();
+
+                if (response.status === 200) {
                     setFormData({ name: "", email: "", message: "" });
-                } else {
-                    console.log(response);
+                    setIsError(false);
                 }
+            })
+            .then(() => {
+                setMessageSent(true);
+                setTimeout(() => {
+                    setMessageSent(false);
+                }, 2500);
             })
             .catch((error) => {
                 console.log(error);
+                setIsError(true);
+                setTimeout(() => {
+                    setIsError(false);
+                }, 2500);
+                setFormData({ name: "", email: "", message: "" });
             });
     };
 
@@ -84,11 +94,12 @@ const Contact = () => {
                 </div>
                 {/* FORM */}
                 <form
-                    className="flex flex-col w-full max-w-[450px] text-violet-200"
+                    className="relative flex flex-col w-full max-w-[450px] text-violet-200"
                     onSubmit={handleSubmit}
                     action="https://api.web3forms.com/submit"
                     method="POST"
                 >
+                    <input type="hidden" name="access_key" value="1f848643-bc72-48da-b3cd-566fd149f5ea"></input>
                     <h2 className="text-center w-full text-xl mb-3  font-bold md:text-xl lg:text-xl text-gradient">
                         Get in touch
                     </h2>
@@ -124,7 +135,7 @@ const Contact = () => {
                     </div>
                     <div className="relative mb-4">
                         <label htmlFor="message" className="text-gradient  leading-7 text-md">
-                            Message
+                            Your Message
                         </label>
                         <textarea
                             id="message"
@@ -142,6 +153,32 @@ const Contact = () => {
                     >
                         Send
                     </button>
+
+                    {/* SUCCESS */}
+                    <div
+                        className={`${
+                            messageSent
+                                ? "animate-jump-in absolute inset-0 flex justify-center items-center"
+                                : "animate-jump-out absolute inset-0 flex justify-center items-center"
+                        }`}
+                    >
+                        <p className="bg-green-600 text-white font-bold text-center p-4 rounded">
+                            Email sent successfully!
+                        </p>
+                    </div>
+
+                    {/* ERROR */}
+                    <div
+                        className={`${
+                            isError
+                                ? "animate-jump-in absolute inset-0 flex justify-center items-center"
+                                : "animate-jump-out absolute inset-0 flex justify-center items-center"
+                        }`}
+                    >
+                        <p className="bg-red-600 text-white font-bold text-center p-4 rounded">
+                            Oops! Something went wrong. Please try again.
+                        </p>
+                    </div>
                 </form>
             </div>
         </section>
