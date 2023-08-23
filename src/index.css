@@ -1,53 +1,56 @@
-body {
-  margin: 0;
-  /* font-family: 'Source Sans Pro', 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif; */
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  padding: 0;
-  font-weight: 300;
-  line-height: 1.5;
-  width: 100vw;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
-  background-attachment: fixed;
-  color: #fff;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active {
+    padding: 0.25rem;
+    border-radius: 100%;
+    color: rgb(34 211 238);
 }
 
-a {
-  color: #fff
+.btn-style {
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient(92.23deg, #406aff 21.43%, #3bace2 50.63%, #b936ee 100%, #ff56f6 117.04%) 1;
+    box-shadow: 0px 4.42184px 107.23px rgba(255, 86, 246, 0.51);
+    padding: 7px 10px;
+    font-weight: bold;
 }
 
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
+.shadow {
+    box-shadow: 0px 4.42184px 107.23px rgba(255, 86, 246, 0.51);
 }
 
-html {
-  scroll-behavior: smooth;
-  /* Hide scrollbar for IE, Edge and Firefox */
-  -ms-overflow-style: none;
-  /* IE and Edge */
-  scrollbar-width: none;
-  /* Firefox */
+.project-border {
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient(92.23deg, #406aff 21.43%, #3bace2 50.63%, #b936ee 100%, #ff56f6 117.04%) 1;
+    box-shadow: 0px 4.42184px 107.23px rgba(255, 86, 246, 0.51);
 }
 
-/* Hide scrollbar for Chrome, Safari and Opera */
-html::-webkit-scrollbar {
-  display: none;
+.about-border {
+    border-left: 1px solid;
+    border-image: linear-gradient(92.23deg, #406aff 21.43%, #3bace2 50.63%, #b936ee 100%, #ff56f6 117.04%) 1;
 }
 
-.App {
-  width: 100vw;
-  height: 100vh;
+.text-gradient {
+    background: linear-gradient(to right, #42a6e3, #ff56f6);
+    color: transparent;
+    background-clip: text;
+}
+
+#animation {
+    background: none;
+}
+
+.pulsate {
+    animation: pulsate 3s infinite alternate;
+    margin-left: 4px;
+}
+
+@keyframes pulsate {
+    0% {
+        text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 4px #fff, 0 0 10px #fff, 0 0 30px #fff, 0 0 40px #fff,
+            0 0 40px #fff;
+    }
 }
