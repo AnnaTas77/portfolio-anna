@@ -31,7 +31,7 @@ const About = () => {
                         viewport={{ once: false, amount: 0.3 }}
                         className="z-20 flex flex-col"
                     >
-                        <div className="flex flex-col w-full text-center text-white text-bold text-md lg:text-left  md:text-lg ">
+                        <div className="flex flex-col w-full self-center text-center text-white text-bold text-md lg:text-left md:text-[1rem] md:w-[78%]">
                             <p className="mb-8 project-border p-3 bg-slate-950/40">
                                 While my background is in environmental conservation and administration, my passion for
                                 technology, creating things from scratch, and solving problems in unique and creative
@@ -57,13 +57,13 @@ const About = () => {
                             initial="hidden"
                             whileInView={"show"}
                             viewport={{ once: false, amount: 0.3 }}
-                            className="flex w-full absolute -z-1 md:left-28 lg:left-[55%] lg:top-[-70%] left-10 top-0 m-8"
+                            className="flex w-full absolute -z-1 md:top-[-50%] md:left-[47%] lg:left-[50%] lg:top-[-60%] left-[20%] top-[-10%] m-8"
                         >
                             <lottie-player
                                 src="https://lottie.host/df300741-e5c1-4516-a85c-95231f72eeb8/CI3XhlHzte.json"
                                 background="none"
                                 speed="1"
-                                style={{ display: "flex", maxWidth: "500px" }}
+                                style={{ display: "flex", maxWidth: "480px" }}
                                 loop
                                 autoplay
                                 direction="1"
@@ -76,7 +76,7 @@ const About = () => {
                             initial="hidden"
                             whileInView={"show"}
                             viewport={{ once: false, amount: 0.3 }}
-                            className="flex w-full absolute -z-1 md:right-10 lg:right-[26%] right-0 lg:bottom-[-3%] bottom-0 m-1"
+                            className="flex w-full absolute -z-1 md:right-[9%] md:bottom-[-15%] lg:right-[26%] lg:bottom-[-3%] right-[14.5%] bottom-[-8%] m-1"
                         >
                             <lottie-player
                                 src="https://lottie.host/df300741-e5c1-4516-a85c-95231f72eeb8/CI3XhlHzte.json"
