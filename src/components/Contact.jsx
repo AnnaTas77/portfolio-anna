@@ -117,7 +117,7 @@ const Contact = () => {
                         Get in touch
                     </h2>
                     <div className="relative mb-4">
-                        <label htmlFor="name" className="text-gradient leading-7 text-md">
+                        <label htmlFor="name" className="text-gradient leading-7 text-lg">
                             Full Name
                         </label>
                         <input
@@ -128,11 +128,11 @@ const Contact = () => {
                             required
                             onChange={handleChange}
                             placeholder="Your full name..."
-                            className="w-full font-light bg-transparent rounded border border-violet-800 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out placeholder:italic placeholder:text-sm placeholder:text-violet-400"
+                            className="w-full font-light bg-transparent rounded border border-violet-800 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out placeholder:italic placeholder:text-md placeholder:text-violet-400"
                         />
                     </div>
                     <div className="relative mb-4">
-                        <label htmlFor="email" className="text-gradient leading-7 text-md">
+                        <label htmlFor="email" className="text-gradient leading-7 text-lg">
                             Email Address
                         </label>
                         <input
@@ -143,11 +143,11 @@ const Contact = () => {
                             required
                             onChange={handleChange}
                             placeholder="Your email address..."
-                            className="w-full font-light bg-transparent rounded border border-violet-800 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out placeholder:italic placeholder:text-sm placeholder:text-violet-400"
+                            className="w-full font-light bg-transparent rounded border border-violet-800 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out placeholder:italic placeholder:text-md placeholder:text-violet-400"
                         />
                     </div>
                     <div className="relative mb-4">
-                        <label htmlFor="message" className="text-gradient  leading-7 text-md">
+                        <label htmlFor="message" className="text-gradient  leading-7 text-lg">
                             Your Message
                         </label>
                         <textarea
@@ -157,12 +157,12 @@ const Contact = () => {
                             required
                             onChange={handleChange}
                             placeholder="Your message..."
-                            className="w-full font-light bg-transparent rounded border border-violet-800 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out placeholder:italic placeholder:text-sm placeholder:text-violet-400"
+                            className="w-full font-light bg-transparent rounded border border-violet-800 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out placeholder:italic placeholder:text-md placeholder:text-violet-400"
                         />
                     </div>
                     <button
                         type="submit"
-                        className="btn-style w-[50%] self-center mt-2 hover:scale-110 transition-all ease-in-out duration-300"
+                        className="btn-style w-[50%] self-center mt-2 hover:scale-110 transition-all ease-in-out duration-300 text-lg text-white"
                     >
                         Send
                     </button>
@@ -171,11 +171,11 @@ const Contact = () => {
                     <div
                         className={`${
                             messageSent
-                                ? "animate-jump-in absolute inset-0 flex justify-center items-center"
+                                ? "animate-jump-in absolute inset-0 flex justify-center items-center "
                                 : "animate-jump-out absolute inset-0 flex justify-center items-center"
                         }`}
                     >
-                        <p className="bg-green-600 text-white font-bold text-center p-4 rounded">
+                        <p className="bg-green-600 text-white font-bold text-center p-4 rounded text-lg">
                             Email sent successfully!
                         </p>
                     </div>
@@ -188,7 +188,7 @@ const Contact = () => {
                                 : "animate-jump-out absolute inset-0 flex justify-center items-center"
                         }`}
                     >
-                        <p className="bg-red-600 text-white font-bold text-center p-4 rounded">
+                        <p className="bg-red-600 text-white font-bold text-center p-4 rounded text-lg">
                             Oops! Something went wrong. Please try again.
                         </p>
                     </div>
