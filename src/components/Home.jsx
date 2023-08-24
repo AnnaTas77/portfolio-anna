@@ -11,7 +11,7 @@ const Home = () => {
                     variants={fadeIn("left", 0.5)}
                     initial="hidden"
                     whileInView={"show"}
-                    viewport={{ once: false, amount: 0.7 }}
+                    viewport={{ once: true }}
                     className="text-gradient text-[25px] font-bold leading-[1] md:text-[39px] lg:text-[50px]  mb-5 "
                 >
                     ANNA <span>TASHEVA</span>
@@ -20,7 +20,7 @@ const Home = () => {
                     variants={fadeIn("right", 0.5)}
                     initial="hidden"
                     whileInView={"show"}
-                    viewport={{ once: false, amount: 0.7 }}
+                    viewport={{ once: true }}
                     className="p-5 text-[23px] lg:text-[28px] font-secondary font-semibold uppercase"
                 >
                     <span className="text-white text-xl md:text-2xl lg:text-3xl">I am a</span>
@@ -36,7 +36,7 @@ const Home = () => {
                     variants={fadeIn("left", 0.5)}
                     initial="hidden"
                     whileInView={"show"}
-                    viewport={{ once: false, amount: 0.7 }}
+                    viewport={{ once: true }}
                     className="mb-8 p-5 lg:mx-0 max-w-[900px]"
                 >
                     Welcome to my Portfolio! This is where I share my passion for coding and showcase my projects. I
@@ -48,7 +48,7 @@ const Home = () => {
                     variants={fadeIn("right", 0.5)}
                     initial="hidden"
                     whileInView={"show"}
-                    viewport={{ once: false, amount: 0.7 }}
+                    viewport={{ once: true }}
                     className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0"
                 >
                     <button className="btn-style hover:scale-110 transition-all ease-in-out duration-300">

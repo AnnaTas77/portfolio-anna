@@ -18,7 +18,7 @@ const About = () => {
                 variants={fadeIn("left", 0.5)}
                 initial="hidden"
                 whileInView={"show"}
-                viewport={{ once: false, amount: 0.3 }}
+                viewport={{ once: true }}
                 className="mb-8 font-bold text-center"
             >
                 I am a <span className="text-gradient">Junior Software Developer</span> based in London.
@@ -29,7 +29,7 @@ const About = () => {
                         variants={fadeIn("left", 0.5)}
                         initial="hidden"
                         whileInView={"show"}
-                        viewport={{ once: false, amount: 0.3 }}
+                        viewport={{ once: true }}
                         className="z-20 flex flex-col"
                     >
                         <div className="flex flex-col w-full self-center text-center text-white text-bold text-md lg:text-left md:text-[1rem] md:w-[78%]">
@@ -57,7 +57,7 @@ const About = () => {
                             variants={fadeIn("right", 0.3)}
                             initial="hidden"
                             whileInView={"show"}
-                            viewport={{ once: false, amount: 0.3 }}
+                            viewport={{ once: true }}
                             className="flex w-full absolute -z-1 md:top-[-50%] md:left-[47%] lg:left-[50%] lg:top-[-60%] left-[20%] top-[-10%] m-8"
                         >
                             <lottie-player
@@ -76,7 +76,7 @@ const About = () => {
                             variants={fadeIn("right", 0.3)}
                             initial="hidden"
                             whileInView={"show"}
-                            viewport={{ once: false, amount: 0.3 }}
+                            viewport={{ once: true }}
                             className="flex w-full absolute -z-1 md:right-[9%] md:bottom-[-15%] lg:right-[26%] lg:bottom-[-3%] right-[14.5%] bottom-[-8%] m-1"
                         >
                             <lottie-player
@@ -99,7 +99,7 @@ const About = () => {
                     variants={fadeIn("right", 0.5)}
                     initial="hidden"
                     whileInView={"show"}
-                    viewport={{ once: false, amount: 0.3 }}
+                    viewport={{ once: true }}
                     src={AnnaPhoto}
                     alt="Anna's photo"
                     className="shadow rounded-full lg:rounded-md w-28 h-28 md:w-48 md:h-auto max-h-[200px] mt-3 mb-7"

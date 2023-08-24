@@ -89,7 +89,7 @@ const Contact = () => {
                     variants={fadeIn("right", 0.5)}
                     initial="hidden"
                     whileInView={"show"}
-                    viewport={{ once: false, amount: 0.3 }}
+                    viewport={{ once: true }}
                     className="flex relative w-full max-w-[450px] min-h-[300px] md:min-h-[430px] rounded-lg overflow-hidden m-10 "
                 >
                     <iframe
@@ -106,7 +106,7 @@ const Contact = () => {
                     variants={fadeIn("left", 0.5)}
                     initial="hidden"
                     whileInView={"show"}
-                    viewport={{ once: false, amount: 0.3 }}
+                    viewport={{ once: true }}
                     className="relative flex flex-col w-full max-w-[450px] text-violet-200"
                     onSubmit={handleSubmit}
                     action="https://api.web3forms.com/submit"

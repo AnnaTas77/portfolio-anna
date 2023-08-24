@@ -1,5 +1,4 @@
 import ProjectCard from "./ProjectCard";
-
 import { projects } from "../data/data.js";
 
 const Projects = () => {

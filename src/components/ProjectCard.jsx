@@ -7,7 +7,7 @@ const ProjectCard = ({ title, description, image, tech, live, github }) => {
     return (
         <div className="project-border flex flex-col w-full md:max-w-[450px] lg:h-[700px] xl:max-w-[550px] items-center justify-start p-5">
             <div className="relative overflow-hidden ">
-                {/* img */}
+                {/* IMAGE */}
                 <img
                     className="flex lg:min-h-[320px] hover:scale-125 transition-all duration-500 rounded-md"
                     src={image}
@@ -20,7 +20,7 @@ const ProjectCard = ({ title, description, image, tech, live, github }) => {
                     variants={fadeIn("left", 0.5)}
                     initial="hidden"
                     whileInView={"show"}
-                    viewport={{ once: false, amount: 0.3 }}
+                    viewport={{ once: true }}
                     className="flex w-[85%] text-center"
                 >
                     {description}
@@ -29,7 +29,7 @@ const ProjectCard = ({ title, description, image, tech, live, github }) => {
                     variants={fadeIn("right", 0.5)}
                     initial="hidden"
                     whileInView={"show"}
-                    viewport={{ once: false, amount: 0.3 }}
+                    viewport={{ once: true }}
                     className="text-gradient flex flex-wrap items-center justify-center w-full mt-5 font-bold text-center"
                 >
                     {tech.map((item) => {
@@ -44,7 +44,7 @@ const ProjectCard = ({ title, description, image, tech, live, github }) => {
                     variants={fadeIn("right", 0.5)}
                     initial="hidden"
                     whileInView={"show"}
-                    viewport={{ once: false, amount: 0.3 }}
+                    viewport={{ once: true }}
                     className="flex flex-wrap items-center justify-center gap-6 mx-3 mt-7 mb-5 w-[85%] text-lg"
                 >
                     <a

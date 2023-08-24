@@ -10,7 +10,7 @@ const Skills = () => {
                 variants={fadeIn("left", 0.5)}
                 initial="hidden"
                 whileInView={"show"}
-                viewport={{ once: false, amount: 0.3 }}
+                viewport={{ once: true }}
                 className="flex flex-wrap items-center justify-center gap-7 mt-10"
             >
                 {skills.map((skill) => {
