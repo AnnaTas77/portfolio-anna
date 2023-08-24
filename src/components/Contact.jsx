@@ -84,7 +84,7 @@ const Contact = () => {
                 </a>
             </div>
             {/* MAP */}
-            <div className="py-10 flex flex-col lg:flex-row w-full items-center justify-center">
+            <div className="py-10 flex flex-col-reverse lg:flex-row w-full items-center justify-center">
                 <motion.div
                     variants={fadeIn("right", 0.5)}
                     initial="hidden"

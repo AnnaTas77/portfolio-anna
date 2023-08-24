@@ -12,7 +12,7 @@ const Home = () => {
                     initial="hidden"
                     whileInView={"show"}
                     viewport={{ once: false, amount: 0.7 }}
-                    className="text-[28px] font-bold leading-[0.8] lg:text-[50px]  mb-5 "
+                    className="text-gradient text-[25px] font-bold leading-[1] md:text-[39px] lg:text-[50px]  mb-5 "
                 >
                     ANNA <span>TASHEVA</span>
                 </motion.h1>

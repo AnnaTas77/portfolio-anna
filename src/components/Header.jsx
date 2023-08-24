@@ -4,12 +4,16 @@ import ATLogo from "../assets/logos/AT Final.png";
 
 const Header = () => {
     return (
-        <header className="flex w-full justify-between items-center fixed top-0 py-5 backdrop-blur-3xl z-[100]">
-            <Link to="home" smooth={true} className="flex cursor-pointer text-2xl px-5 font-bold text-gradient">
-                <img src={ATLogo} alt="Anna Tasheva Logo" className="w-[65px] h-[60px]" />
+        <header className="flex w-full justify-between items-center fixed top-0 py-4 backdrop-blur-3xl z-[100]">
+            <Link
+                to="home"
+                smooth={true}
+                className="flex cursor-pointer text-2xl ml-7 font-bold text-gradient min-w-[40px]"
+            >
+                <img src={ATLogo} alt="Anna Tasheva Logo" className="w-[40px] h-[38px] md:w-[65px] md:h-[60px]" />
             </Link>
 
-            <div className="flex items-center lg:gap-7 gap-5 text-violet-400">
+            <div className="flex items-center lg:gap-7 md:gap-5 gap-3 text-violet-400">
                 <a
                     href="https://github.com/AnnaTas77"
                     target="_blank"
@@ -24,7 +28,7 @@ const Header = () => {
                     href="https://www.linkedin.com/in/anna-tasheva-48074085/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center mr-10 transition-colors duration-300 hover:text-cyan-400 focus:outline-none"
+                    className="flex items-center mr-8 transition-colors duration-300 hover:text-cyan-400 focus:outline-none"
                 >
                     <div>
                         <BsLinkedin className="text-2xl md:text-3xl" />

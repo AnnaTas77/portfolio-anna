@@ -38,12 +38,12 @@ const About = () => {
                                 technology, creating things from scratch, and solving problems in unique and creative
                                 ways inspired my journey towards software development.
                             </p>
-                            <p className="mb-8 project-border p-3">
+                            <p className="mb-8 project-border p-3 bg-slate-950/40">
                                 The Northcoders Software Developer Skills Bootcamp played a crucial role in terms of my
                                 progression in this field, as it equipped me with strong full-stack skills and
                                 invaluable experience in pair programming and efficient teamwork.
                             </p>
-                            <p className="mb-4 project-border p-3">
+                            <p className="mb-4 project-border p-3 bg-slate-950/40">
                                 My journey in software development is not only about writing code - it is about crafting
                                 elegant solutions that make a tangible impact. I embrace the ever-changing world of
                                 software and see each project as a chance to learn, tap into my creativity, and think
