@@ -5,11 +5,11 @@ import { fadeIn } from "../variants";
 
 const ProjectCard = ({ title, description, image, tech, live, github }) => {
     return (
-        <div className="project-border flex flex-col w-full md:max-w-[450px] lg:h-[700px] xl:max-w-[550px] items-center justify-start p-5">
+        <div className="project-border flex flex-col w-full md:max-w-[450px] lg:h-[800px] xl:max-w-[550px] items-center justify-start p-5">
             <div className="relative overflow-hidden ">
                 {/* IMAGE */}
                 <img
-                    className="flex lg:min-h-[320px] hover:scale-125 transition-all duration-500 rounded-md"
+                    className="flex hover:scale-125 transition-all duration-500 rounded-md"
                     src={image}
                     alt={`Screenshot of ${title} project`}
                 />
@@ -21,7 +21,7 @@ const ProjectCard = ({ title, description, image, tech, live, github }) => {
                     initial="hidden"
                     whileInView={"show"}
                     viewport={{ once: true }}
-                    className="flex w-[85%] text-center"
+                    className="flex w-[85%] text-center text-lg "
                 >
                     {description}
                 </motion.p>
