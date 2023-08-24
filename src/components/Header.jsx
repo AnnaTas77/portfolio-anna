@@ -1,6 +1,6 @@
 import { Link } from "react-scroll";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
-import ATLogo from "../assets/logos/AT Final.png";
+import ATLogo from "../assets/logos/AT-black-outline-square.png";
 
 const Header = () => {
     return (
