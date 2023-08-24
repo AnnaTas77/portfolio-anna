@@ -23,7 +23,7 @@ export const skills = [
     { label: "NodeJS", icon: NodeJS },
     { label: "Jest", icon: Jest },
     { label: "CSS3", icon: CSS3Icon },
-    { label: "TailwindCSS", icon: TailwindCSS },
+    { label: "Tailwind CSS", icon: TailwindCSS },
     { label: "HTML5", icon: HTML5Icon },
     { label: "Git", icon: Git },
     { label: "GitHub", icon: GitHub },

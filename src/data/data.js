@@ -39,7 +39,7 @@ export const projects = [
         description:
             "This project features an interactive map of meteorite landings, sourcing data from NASA's Meteorite Landings API. Users can conveniently sort the table of all known landings by name, year of discovery, and mass in grams by clicking the column headings.",
         image: Meteorites,
-        tech: ["React", "Axios", "CSS", "HTML"],
+        tech: ["React", "Axios", "CSS", "Tailwind CSS", "HTML"],
         live: "https://meteorite-landings-interactive-map.netlify.app/",
         github: "https://github.com/AnnaTas77/meteorite-landings-map",
     },
