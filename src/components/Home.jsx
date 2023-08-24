@@ -37,7 +37,7 @@ const Home = () => {
                     initial="hidden"
                     whileInView={"show"}
                     viewport={{ once: true }}
-                    className="mb-8 p-5 lg:mx-0 max-w-[900px]"
+                    className="mb-8 p-5 lg:mx-0 max-w-[900px] text-lg md:text-xl"
                 >
                     Welcome to my Portfolio! This is where I share my passion for coding and showcase my projects. I
                     love to explore new technologies and continuously learn and grow in the ever-evolving world of
@@ -49,15 +49,15 @@ const Home = () => {
                     initial="hidden"
                     whileInView={"show"}
                     viewport={{ once: true }}
-                    className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0"
+                    className="flex max-w-max gap-x-6 items-center justify-center mb-12"
                 >
                     <button className="btn-style hover:scale-110 transition-all ease-in-out duration-300">
-                        <Link to="contact" className="text-gradient font-bold" smooth={true}>
+                        <Link to="contact" className="text-gradient font-bold text-lg md:text-xl" smooth={true}>
                             Contact me
                         </Link>
                     </button>
                     <button className="btn-style hover:scale-110 transition-all ease-in-out duration-300">
-                        <Link to="projects" className="text-gradient font-bold" smooth={true}>
+                        <Link to="projects" className="text-gradient font-bold text-lg md:text-xl" smooth={true}>
                             My Portfolio
                         </Link>
                     </button>

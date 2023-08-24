@@ -7,7 +7,7 @@ const Projects = () => {
             className="flex flex-col w-full items-center justify-center min-h-screen pt-20 mb-[100px]"
             id="projects"
         >
-            <h2 className="text-center w-full text-xl py-5 mb-10 mt-[30px] font-bold md:text-2xl lg:text-3xl bg-gradient-to-r text-transparent bg-clip-text from-[#42A6E3] to-[#FF56F6]">
+            <h2 className="text-center w-full text-2xl py-5 mb-10 mt-[30px] font-bold lg:text-3xl bg-gradient-to-r text-transparent bg-clip-text from-[#42A6E3] to-[#FF56F6]">
                 Portfolio Projects
             </h2>
 

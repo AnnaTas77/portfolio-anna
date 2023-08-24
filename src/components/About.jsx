@@ -11,15 +11,13 @@ const About = () => {
             id="about"
             data-aos="fade-up"
         >
-            <h2 className="text-gradient text-center w-full text-xl py-5 mb-10 font-bold md:text-2xl lg:text-3xl">
-                About me
-            </h2>
+            <h2 className="text-gradient text-center w-full text-2xl py-5 mb-10 font-bold lg:text-3xl">About me</h2>
             <motion.h3
                 variants={fadeIn("left", 0.5)}
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: true }}
-                className="mb-8 font-bold text-center"
+                className="mb-8 font-bold text-center text-lg md:text-xl"
             >
                 I am a <span className="text-gradient">Junior Software Developer</span> based in London.
             </motion.h3>
@@ -32,7 +30,7 @@ const About = () => {
                         viewport={{ once: true }}
                         className="z-20 flex flex-col"
                     >
-                        <div className="flex flex-col w-full self-center text-center text-white text-bold text-md lg:text-left md:text-[1rem] md:w-[78%]">
+                        <div className="flex flex-col w-full self-center text-center text-bold text-md lg:text-left md:text-[1rem] md:w-[78%] text-lg md:text-xl text-white">
                             <p className="mb-8 project-border p-3 bg-slate-950/40">
                                 While my background is in environmental conservation and administration, my passion for
                                 technology, creating things from scratch, and solving problems in unique and creative
@@ -58,7 +56,7 @@ const About = () => {
                             initial="hidden"
                             whileInView={"show"}
                             viewport={{ once: true }}
-                            className="flex w-full absolute -z-1 md:top-[-50%] md:left-[47%] lg:left-[50%] lg:top-[-60%] left-[20%] top-[-10%] m-8"
+                            className="flex w-full absolute -z-1 md:top-[-50%] md:left-[47%] lg:left-[55%] lg:top-[-58%] left-[20%] top-[-10%] m-8"
                         >
                             <lottie-player
                                 src={JSON.stringify(LaptopAnimation)}
