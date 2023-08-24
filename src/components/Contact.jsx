@@ -162,7 +162,7 @@ const Contact = () => {
                     </div>
                     <button
                         type="submit"
-                        className="btn-style w-[50%] self-center mt-2 hover:scale-110 transition-all ease-in-out duration-300 text-lg text-white"
+                        className="pulsate btn-style w-[50%] self-center mt-2 hover:scale-110 transition-all ease-in-out duration-300 text-lg text-white"
                     >
                         Send
                     </button>
