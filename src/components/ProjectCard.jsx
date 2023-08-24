@@ -34,7 +34,7 @@ const ProjectCard = ({ title, description, image, tech, live, github }) => {
                 >
                     {tech.map((item) => {
                         return (
-                            <span key={item} className="px-3 flex">
+                            <span key={item} className="px-3 flex text-lg md:text-xl">
                                 {item}
                             </span>
                         );
@@ -60,7 +60,7 @@ const ProjectCard = ({ title, description, image, tech, live, github }) => {
                     </a>
                     {typeof github === "string" ? (
                         <a
-                            href={live}
+                            href={github}
                             target="_blank"
                             rel="noreferrer noopener"
                             className="flex items-center font-bold cursor-pointer"

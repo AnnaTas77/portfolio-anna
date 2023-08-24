@@ -1,7 +1,7 @@
 import RedditGeeks from "../assets/RedditScreenshot7.jpg";
 import WeatherApp from "../assets/WeatherApp_merged7A.jpg";
 import NCNews from "../assets/NcNews.png";
-import Meteorites from "../assets/Meteorite Landings Viewer.png";
+import Meteorites from "../assets/meteorites-website-best.png";
 
 export const projects = [
     {
@@ -40,7 +40,7 @@ export const projects = [
             "This project features an interactive map of meteorite landings, sourcing data from NASA's Meteorite Landings API. Users can conveniently sort the table of all known landings by name, year of discovery, and mass in grams by clicking the column headings.",
         image: Meteorites,
         tech: ["React", "Axios", "CSS", "HTML"],
-        live: null,
-        github: "https://github.com/AnnaTas77/fe-react-data-visualisation",
+        live: "https://meteorite-landings-interactive-map.netlify.app/",
+        github: "https://github.com/AnnaTas77/meteorite-landings-map",
     },
 ];

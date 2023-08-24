@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
