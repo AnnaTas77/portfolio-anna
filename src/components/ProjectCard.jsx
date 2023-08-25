@@ -41,7 +41,7 @@ const ProjectCard = ({ title, description, image, tech, live, github }) => {
                     })}
                 </motion.p>
                 <motion.div
-                    variants={fadeIn("right", 0.5)}
+                    variants={fadeIn("left", 0.5)}
                     initial="hidden"
                     whileInView={"show"}
                     viewport={{ once: true }}
