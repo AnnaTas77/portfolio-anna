@@ -7,8 +7,8 @@ import "../index.css";
 
 const NavBar = () => {
     return (
-        <nav className="flex justify-center items-center mt-6 w-full fixed bottom-10 lg:bottom-14 z-[100]">
-            <div className="w-[80%] bg-black/20 h-[76px] lg:h-[86px] backdrop-blur-3xl rounded-full max-w-[460px] px-5 flex justify-between items-center align-middle text-2xl text-white/70">
+        <nav className="flex justify-center items-center mt-6 w-full fixed bottom-8 lg:bottom-14 z-[100]">
+            <div className="w-[90%] bg-black/20 h-[76px] lg:h-[86px] backdrop-blur-3xl rounded-full max-w-[460px] px-5 flex justify-between items-center align-middle text-2xl text-white/70">
                 <Link
                     to="home"
                     smooth={true}

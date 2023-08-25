@@ -54,7 +54,10 @@ const Contact = () => {
     };
 
     return (
-        <section className="flex flex-col w-full items-center justify-center min-h-screen " id="contact">
+        <section
+            className="flex flex-col w-full items-center justify-center min-h-screen mt-[-30px] md:mt-[-100px]"
+            id="contact"
+        >
             <h2 className="text-center w-full text-2xl mb-10 font-bold lg:text-3xl text-gradient mt-[120px]">
                 Let&#39;s connect!
             </h2>

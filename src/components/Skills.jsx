@@ -4,8 +4,11 @@ import { fadeIn } from "../variants";
 
 const Skills = () => {
     return (
-        <section className="flex flex-col items-center justify-center w-full max-w-[900px] min-h-screen " id="skills">
-            <h2 className="text-center w-full mb-12 font-bold text-2xl lg:text-3xl text-gradient">Skills</h2>
+        <section
+            className="flex flex-col items-center justify-center w-full max-w-[900px] min-h-screen pt-0 md:pt-0"
+            id="skills"
+        >
+            <h2 className="text-center w-full mb-5 md:mb-12 font-bold text-2xl lg:text-3xl text-gradient">Skills</h2>
             <motion.div
                 variants={fadeIn("left", 0.5)}
                 initial="hidden"
@@ -16,8 +19,8 @@ const Skills = () => {
                 {skills.map((skill) => {
                     return (
                         <div key={skill.label} className="flex flex-col items-center justify-center">
-                            <img src={skill.icon} alt={`${skill.label} logo`} className="h-[55px] md:h-[68px]" />
-                            <p className="mt-1 font-bold text-md lg:text-xl">{skill.label}</p>
+                            <img src={skill.icon} alt={`${skill.label} logo`} className="h-[50px] md:h-[68px]" />
+                            <p className="mt-1 font-bold text-sm lg:text-xl">{skill.label}</p>
                         </div>
                     );
                 })}

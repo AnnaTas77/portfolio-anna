@@ -15,13 +15,13 @@ const ProjectCard = ({ title, description, image, tech, live, github }) => {
                 />
             </div>
             <div className="flex flex-col justify-center items-center w-full">
-                <p className="flex text-3xl text-gradient my-5 text-center">{title}</p>
+                <p className="flex text-2xl md:text-3xl text-gradient my-5 text-center">{title}</p>
                 <motion.p
                     variants={fadeIn("left", 0.5)}
                     initial="hidden"
                     whileInView={"show"}
                     viewport={{ once: true }}
-                    className="flex w-[85%] text-center text-lg "
+                    className="flex w-[85%] text-center text-md md:text-lg "
                 >
                     {description}
                 </motion.p>
@@ -45,7 +45,7 @@ const ProjectCard = ({ title, description, image, tech, live, github }) => {
                     initial="hidden"
                     whileInView={"show"}
                     viewport={{ once: true }}
-                    className="flex flex-wrap items-center justify-center gap-6 mx-3 mt-7 mb-5 w-[85%] text-lg"
+                    className="flex flex-wrap items-center justify-center gap-6 mx-3 mt-7 mb-5 w-[85%] text-md md:text-lg"
                 >
                     <a
                         href={live}

@@ -4,7 +4,7 @@ import { projects } from "../data/data.js";
 const Projects = () => {
     return (
         <section
-            className="flex flex-col w-full items-center justify-center min-h-screen pt-20 mb-[100px]"
+            className="flex flex-col w-full items-center justify-center min-h-screen pt-10 md:pt-20 mb-[100px]"
             id="projects"
         >
             <h2 className="text-center w-full text-2xl py-5 mb-10 mt-[30px] font-bold lg:text-3xl bg-gradient-to-r text-transparent bg-clip-text from-[#42A6E3] to-[#FF56F6]">

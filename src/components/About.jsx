@@ -7,7 +7,7 @@ import LaptopAnimation from "../assets/animations/laptopAnimation.json";
 const About = () => {
     return (
         <section
-            className="flex flex-col items-center justify-center w-full max-w-[1180px] min-h-screen pt-44"
+            className="flex flex-col items-center justify-center w-full max-w-[1180px] min-h-screen pt-20 md:pt-40"
             id="about"
             data-aos="fade-up"
         >
@@ -17,7 +17,7 @@ const About = () => {
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: true }}
-                className="mb-8 font-bold text-center text-lg md:text-xl"
+                className="mb-8 font-bold text-center text-lg md:text-xl p-3"
             >
                 I am a <span className="text-gradient">Junior Software Developer</span> based in London.
             </motion.h3>
@@ -30,7 +30,7 @@ const About = () => {
                         viewport={{ once: true }}
                         className="z-20 flex flex-col"
                     >
-                        <div className="flex flex-col w-full self-center text-center text-bold text-md lg:text-left md:text-[1rem] md:w-[78%] text-lg md:text-xl text-white">
+                        <div className="flex flex-col w-full self-center text-center text-bold text-sm lg:text-left md:text-[1rem] md:w-[78%] md:text-xl text-white">
                             <p className="mb-8 project-border p-3 bg-slate-950/40">
                                 While my background is in environmental conservation and administration, my passion for
                                 technology, creating things from scratch, and solving problems in unique and creative
