@@ -2,8 +2,18 @@ import RedditGeeks from "../assets/RedditScreenshot7.jpg";
 import WeatherApp from "../assets/WeatherApp_merged7A.jpg";
 import NCNews from "../assets/NcNews.png";
 import Meteorites from "../assets/meteorites-website-best.png";
+import BooksBuzz from "../assets/books-buzz.png";
 
 export const projects = [
+    {
+        title: "Books-Buzz",
+        description:
+            "Books-Buzz is a responsive web application that provides tools to organize reading preferences, discover new books, and engage with a community of book enthusiasts. Powered by the Google Books API, it offers advanced features including barcode scanning, voice-activated search, and manual search by title, author, or ISBN.",
+        image: BooksBuzz,
+        tech: ["Next.js", "Express.js", "Firebase", "Tailwind CSS", "CSS"],
+        live: "https://books-buzz-app.netlify.app/",
+        github: "https://github.com/AnnaTas77/books-app",
+    },
     {
         title: "NC News",
         description:
