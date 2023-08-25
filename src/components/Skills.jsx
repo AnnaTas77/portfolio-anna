@@ -11,13 +11,13 @@ const Skills = () => {
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: true }}
-                className="flex flex-wrap items-center justify-center gap-7 mt-10"
+                className="flex flex-wrap items-center justify-center gap-7 lg:gap-9 mt-10"
             >
                 {skills.map((skill) => {
                     return (
                         <div key={skill.label} className="flex flex-col items-center justify-center">
-                            <img src={skill.icon} alt={`${skill.label} logo`} className="h-[55px]" />
-                            <p className="mt-1 font-bold">{skill.label}</p>
+                            <img src={skill.icon} alt={`${skill.label} logo`} className="h-[55px] md:h-[68px]" />
+                            <p className="mt-1 font-bold text-md lg:text-xl">{skill.label}</p>
                         </div>
                     );
                 })}

@@ -8,7 +8,7 @@ const Header = () => {
             <Link
                 to="home"
                 smooth={true}
-                className="flex cursor-pointer text-2xl ml-7 font-bold text-gradient min-w-[40px]"
+                className="flex cursor-pointer text-2xl ml-7 font-bold text-gradient min-w-[40px] md:mt-1"
             >
                 <img src={ATLogo} alt="Anna Tasheva Logo" className="w-[40px] h-[38px] md:w-[65px] md:h-[60px]" />
             </Link>
