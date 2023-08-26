@@ -10,7 +10,7 @@ export const projects = [
         description:
             "Books-Buzz is a responsive web application that provides tools to organize reading preferences, discover new books, and engage with a community of book enthusiasts. Powered by the Google Books API, it offers advanced features including barcode scanning, voice-activated search, and manual search by title, author, or ISBN.",
         image: BooksBuzz,
-        tech: ["Next.js", "Express.js", "Firebase", "Tailwind CSS", "CSS"],
+        tech: ["Next.js", "Firebase", "Tailwind CSS", "CSS"],
         live: "https://books-buzz-app.netlify.app/",
         github: "https://github.com/AnnaTas77/books-app",
     },
