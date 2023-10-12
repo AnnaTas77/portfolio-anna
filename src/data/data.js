@@ -17,7 +17,7 @@ export const projects = [
     {
         title: "NC News",
         description:
-            "NC News is a comprehensive full-stack project, drawing inspiration from Reddit's features. With a custom backend News API, it powers a seamless user experience. The frontend acts as the gateway, offering easy access to diverse API endpoints. Users can effortlessly read articles, sort them by topic, date, comment count, and votes count, and actively engage by sharing their thoughts through comments.",
+            "NC News is a full-stack project, drawing inspiration from Reddit's features. With a custom backend News API, it powers a seamless user experience. The frontend acts as the gateway, offering easy access to diverse API endpoints. Users can effortlessly read articles, sort them by topic, date, comment count, and votes count, and actively engage by sharing their thoughts through comments.",
         image: NCNews,
         tech: ["PostgreSQL", "Express.js", "React", "Axios", "CSS"],
         live: "https://nc-news-anna.netlify.app/",
