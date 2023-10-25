@@ -3,6 +3,7 @@ import WeatherApp from "../assets/WeatherApp_merged7A.jpg";
 import NCNews from "../assets/NcNews.png";
 import Meteorites from "../assets/meteorites-website-best.png";
 import BooksBuzz from "../assets/books-buzz.png";
+import PokemonBattles from "../assets/pokemon-battles.png";
 
 export const projects = [
     {
@@ -25,6 +26,15 @@ export const projects = [
             { label: "Frontend", url: "https://github.com/AnnaTas77/nc-news-frontend-project" },
             { label: "Backend", url: "https://github.com/AnnaTas77/nc-news-backend-project" },
         ],
+    },
+    {
+        title: "Pokemon Battles",
+        description:
+            "Pokemon Battles is an immersive browser game that lets you choose your Pokemon, strategize your attacks, and engage in thrilling battles against randomly selected opponents. With pure simplicity and fun in mind, it offers an easy way to dive into the world of Pokemon. This game is built using JavaScript, CSS, and HTML, and it's powered by the PokeAPI for an authentic Pokemon experience.",
+        image: PokemonBattles,
+        tech: ["JavaScript", "CSS", "HTML"],
+        live: "https://poke-battles.netlify.app/",
+        github: "https://github.com/AnnaTas77/pokemon-battles",
     },
     {
         title: "Reddit Geeks",
